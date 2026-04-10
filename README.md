@@ -32,3 +32,4 @@ En esta versión (v2.0) hemos evolucionado de un simple "checklist corporativo" 
 Además de ser una SPA, el repositorio original contiene un ecosistema de documentación en bruto analizada: informes de videos crudos (ej. `informe_video_sorany.md`), comprobantes de aerolíneas (`informe_vuelos_sorany.md`) y digitalizaciones de tu cédula y pasaporte aprobados.
 
 Esta herramienta está hecha a tu medida. ¡Tranquila, que Dani se encarga del fondo logístico!
+# voyage
