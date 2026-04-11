@@ -27,10 +27,15 @@ En esta última iteración (v2.2) el portal se consolida como un **ecosistema t�
 
 ---
 
-## 📋 Control de Documentos
-Además de ser una SPA, el repositorio original contiene un ecosistema de documentación en bruto analizada: informes de videos crudos (ej. `informe_video_sorany.md`), comprobantes de aerolíneas (`informe_vuelos_sorany.md`) y digitalizaciones de tu cédula y pasaporte aprobados.
+## 🔐 Acceso "Backstage": La Caja Fuerte del Proyecto
+**Sorany:** Si estás leyendo esto directamente desde el enlace de GitHub, significa que estás viendo el "Backstage" o el motor interno de tu página web.
 
-Esta herramienta está hecha a tu medida. ¡Tranquila, que Dani se encarga del fondo logístico!
+Además de contener el código puro, este repositorio actúa como la caja fuerte digital donde estructuramos la logística de tu viaje para que no haya margen de error. Aquí dentro se almacena un ecosistema de alta precisión:
+*   Análisis técnico de tus vuelos en tiempo real (`informe_vuelos_sorany.md`).
+*   La estrategia migratoria de 8 días y desgloses de video (`informe_video_sorany.md`).
+*   El resguardo de las copias digitales.
+
+Toda esta arquitectura está construida como un escudo táctico para tu paso migratorio. **¡Tranquila! Tú solo entra a la App y dedícate a seguir el guion oficial. Del código complejo y la logística de fondo nos encargamos Daniel y la inteligencia artificial desde esta trinchera.**
 
 ---
 
