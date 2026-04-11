@@ -1,18 +1,17 @@
-# Changelog
+# Changelog - SoranyProyect (Ruta Migratoria)
 
-Todas las variaciones notables en la aplicación "Ruta Madrid" documentadas aquí.
+## [10-04-2026] - Sesión de Configuración Inicial y Git
 
-## [2.0.0] - 2026-04-10
+### Añadido
+- Inicialización del repositorio Git local en `/home/sidzcool/Documentos/SoranyProyect`.
+- Configuración de la identidad de Git local a `garciadanielsid@gmail.com` (Daniel Sid).
+- Vinculación con el repositorio remoto `git@github.com:AlchemistSidZCooL/voyage.git` mediante SSH.
+- Subida inicial de los 24 archivos del proyecto (React + Vite + Tailwind).
 
-### Añadido (Added)
-- **Framer Motion**: Integración de animaciones dinámicas al cambiar entre pasos del proceso.
-- **Tipografía**: Incorporada "Outfit" desde Google Fonts para mejorar la legibilidad y amabilidad de la aplicación.
-- **Micro-interacciones UI/UX**: Tarjetas con efectos de elevación, sombras suaves y "glassmorphism" en menús y contenedores.
-- **Datos Oficiales de Vuelo**: Agregado Localizador CB5ES3, Boleto electrónico y cronograma de conexiones de *Trip.com* y *Avianca* en el Paso 2 basándose en facturas digitalizadas.
-- **Semáforo para Apostilla**: Guía visual de control de tiempo implementada en el Paso 1 para Antecedentes Penales.
-- **Dashboard Financiero**: Explicación clara del límite de viáticos exigido (500,000 COP) por día para pasar migración sin incidentes en el Paso 3.
+### Corregido
+- **Error de Acceso Denegado en Git:** Se solucionó invitando a la identidad SSH local (`DSidCode`) como colaborador en el repositorio de la cuenta principal (`AlchemistSidZCooL`).
+- **Cambio de HTTPS a SSH:** Se actualizó la URL del remoto para permitir `push` sin solicitud de contraseña.
 
-### Cambiado (Changed)
-- Colores sólidos corporativos sustituidos por una mezcla pastel en la capa base y CSS (`bg-gradient-pastel`).
-- Reestructuración de la lista de responsabilidades de Dani (delegada explícitamente en el panel).
-- Aviso sincero sobre "El Piso": Transparencia agregada en el Paso 4 indicando estado de "Negociación en Proceso".
+### Estado Actual
+- El proyecto está sincronizado con GitHub.
+- El entorno de desarrollo (Vite) está listo para continuar con la implementación de las vistas de la "Hoja de Ruta".

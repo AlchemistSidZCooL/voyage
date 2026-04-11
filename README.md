@@ -32,4 +32,13 @@ En esta versión (v2.0) hemos evolucionado de un simple "checklist corporativo" 
 Además de ser una SPA, el repositorio original contiene un ecosistema de documentación en bruto analizada: informes de videos crudos (ej. `informe_video_sorany.md`), comprobantes de aerolíneas (`informe_vuelos_sorany.md`) y digitalizaciones de tu cédula y pasaporte aprobados.
 
 Esta herramienta está hecha a tu medida. ¡Tranquila, que Dani se encarga del fondo logístico!
-# voyage
+
+---
+
+## 🛠️ Mantenimiento y Control de Versiones
+
+*   **Repositorio Remoto:** [AlchemistSidZCooL/voyage](https://github.com/AlchemistSidZCooL/voyage)
+*   **Configuración de Acceso:** Se utiliza **SSH** (`git@github.com...`) para evitar el uso de contraseñas.
+*   **Identidad de Git:**
+    *   **User:** Daniel Sid (`garciadanielsid@gmail.com`)
+    *   **SSH Identity:** `DSidCode` (invitado como colaborador en el repo de AlchemistSidZCooL).
