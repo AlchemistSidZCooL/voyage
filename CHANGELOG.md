@@ -10,6 +10,7 @@
 ### Modificado
 - **Regla Minimalista de Equipaje:** En base a la fecha real de retorno, se redujo drásticamente el equipaje sugerido en la pestaña 1 a prendas para una sola semana.
 - **Limpieza de Documentación:** Refactorización del `README.md` limitándolo estrictamente a la funcionalidad lógica e infraestructura, removiendo menciones irrelevantes a iteraciones de UI.
+- **Sistema de Diseño (Extraído):** Creación del documento `design_system_premium.md` (Design System) para permitir la portabilidad del estilo "Premium Dark Mode" a otros proyectos, garantizando consistencia visual y técnica.
 
 ## [11-04-2026] - Rediseño Interfaz y Husos Horarios (v2.1)
 
