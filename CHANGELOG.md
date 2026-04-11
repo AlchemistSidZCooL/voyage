@@ -1,6 +1,17 @@
 # Changelog - SoranyProyect (Ruta Migratoria)
 
-## [11-04-2026] - Rediseño Premium y Optimización Logística
+## [11-04-2026] - Estrategia Migratoria de 8 Días y Logística Origen (v2.2)
+
+### Añadido
+- **Logística Terrestre (Aguadas ➔ Pereira):** Se añadió el módulo de transporte interno alertando sobre el riesgo del viaje de madrugada y recomendando descanso en hotel económico la noche previa en Nacederos/Matecaña.
+- **Itinerario de Migración (8 Días):** Módulo tipo "Guion Oficial" en la pestaña de Frontera que detalla actividades turísticas diarias verosímiles en Madrid y alrededores (Toledo, Segovia, Museos) como argumento definitivo para el control fronterizo.
+- **Táctica Presupuestaria:** Se ajustó la exigencia de demostración de capital de "3500€" a "~1,000€", alineándolo estrechamente al mandato de Policía de Fronteras (113€/día) para 8 días de turismo comprobable.
+
+### Modificado
+- **Regla Minimalista de Equipaje:** En base a la fecha real de retorno, se redujo drásticamente el equipaje sugerido en la pestaña 1 a prendas para una sola semana.
+- **Limpieza de Documentación:** Refactorización del `README.md` limitándolo estrictamente a la funcionalidad lógica e infraestructura, removiendo menciones irrelevantes a iteraciones de UI.
+
+## [11-04-2026] - Rediseño Interfaz y Husos Horarios (v2.1)
 
 ### Añadido
 - **Control de Husos Horarios:** Incorporadas tarjetas detalladas ("Paso 2") sobre la diferencia horaria entre Madrid (+7 horas) y Colombia para gestionar comunicaciones familiares.

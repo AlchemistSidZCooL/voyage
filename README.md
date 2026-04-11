@@ -2,13 +2,13 @@
 
 Este portal es una aplicación interactiva desarrollada en **React** diseñada para gestionar de manera profesional, estratégica y **sin ansiedad** el proceso migratorio de **Sorany** desde Aguadas (Caldas) hacia Madrid (España).
 
-En esta versión (v2.1) hemos evolucionado de un diseño pastel inicial a un **ecosistema táctico estilo Premium Dark Mode**, enfocado total y agresivamente en los pasos inmediatos logísticos pre-vuelo (equipajes, tiempos, migración) usando fuentes súper legibles.
+En esta última iteración (v2.2) el portal se consolida como un **ecosistema táctico de respuesta rápida (SPA)**, enfocado de manera pura y pragmática en la logística pre-vuelo: gestión de tiempos, límites de equipaje exactos, reajuste presupuestario, husos horarios y un guion oficial verificable para el control migratorio de Barajas.
 
 ---
 
 ## 🚀 Funcionalidades Principales
 
-*   **Panel Visual Premium (Dark Mode):** UI elegante orientada al alto rendimiento y bajo estrés. Utiliza *Glassmorphism* avanzado sobre fondos oscuros (`slate-950`) con detalles vibrantes neón (Cian/Púrpura), excelente legibilidad y tipografías aumentadas.
+*   **Arquitectura de UI Funcional:** Interfaz desarrollada estrictamente en base a legibilidad e inmediatez. Utiliza tarjetas independientes de información diseñadas para minimizar la carga cognitiva del usuario ante el proceso.
 *   **Hoja de Ruta enfocada en Logística Inmediata:**
     1.  **Preparativos del Viaje:** Tareas de cuenta regresiva (a 30 y 15 días) totalmente orientadas en la **estrategia de equipaje** (Regla de oro: Mochila Personal y Maleta 10KG "El Rollito").
     2.  **Itinerarios y Frontera (¡Reloj Mundial!):** 
@@ -21,8 +21,8 @@ En esta versión (v2.1) hemos evolucionado de un diseño pastel inicial a un **e
 ## 🛠️ Stack Tecnológico Actualizado
 
 *   **React + Vite:** Motor principal super veloz.
-*   **Tailwind CSS (Personalizado):** Capa de glassmorphism y backgrounds difuminados adaptables.
-*   **Framer Motion:** Micro-interacciones dinámicas entre los pasos ("animaciones de tarjetas").
+*   **Tailwind CSS:** Framework de utilitarios inyectado para la disposición en grilla (grid) de la arquitectura y la separación colorimétrica de estados (urgencias, check-ins, alertas de fronteras).
+*   **Framer Motion:** Manejo de transiciones lógicas entre los componentes sin afectar la latencia.
 *   **Lucide-React:** Set de iconos semánticos limpios.
 
 ---
