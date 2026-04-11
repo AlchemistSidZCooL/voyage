@@ -2,20 +2,19 @@
 
 Este portal es una aplicación interactiva desarrollada en **React** diseñada para gestionar de manera profesional, estratégica y **sin ansiedad** el proceso migratorio de **Sorany** desde Aguadas (Caldas) hacia Madrid (España).
 
-En esta versión (v2.0) hemos evolucionado de un simple "checklist corporativo" a un **andamio cognitivo con un diseño amigable**, cálido y que integra los datos exactos reales de tu vuelo y soporte económico para disipar el miedo a lo desconocido frente a migración.
+En esta versión (v2.1) hemos evolucionado de un diseño pastel inicial a un **ecosistema táctico estilo Premium Dark Mode**, enfocado total y agresivamente en los pasos inmediatos logísticos pre-vuelo (equipajes, tiempos, migración) usando fuentes súper legibles.
 
 ---
 
 ## 🚀 Funcionalidades Principales
 
-*   **Panel Visual Orientado a Metas:** UI suave con *Glassmorphism*, reduciendo la carga cognitiva con tonos pasteles y micro-interacciones sutiles usando `Framer Motion`.
-*   **Hoja de Ruta en 4 Pasos:**
-    1.  **Antes de Volar:** Semáforo de apostillas (para evitar vencimientos de 90 días en la aduana) y lista de tareas segregadas.
-    2.  **Viajes y Maletas (¡Datos Reales!):**
-        *   Incluye tus PNR de **Trip.com**, vuelos con Avianca y Air Europa para el 7 y 15 de Mayo de 2026.
-        *   Directrices de equipaje (Maleta "del doctor", 10kg, bolsa ziploc para líquidos).
-    3.  **Transición a Estudiante (Economía Oficial):** Recordatorio vital de no usar mítica "carta de invitación" para evitar sospechas y optar por el estándar europeo (aprox. 100€ diarios demostrables o "500 lucas/día").
-    4.  **Logística en Madrid:** Estatus sincero del alojamiento (en negociación para primeros de mayo) para mitigar la ansiedad de "El Piso".
+*   **Panel Visual Premium (Dark Mode):** UI elegante orientada al alto rendimiento y bajo estrés. Utiliza *Glassmorphism* avanzado sobre fondos oscuros (`slate-950`) con detalles vibrantes neón (Cian/Púrpura), excelente legibilidad y tipografías aumentadas.
+*   **Hoja de Ruta enfocada en Logística Inmediata:**
+    1.  **Preparativos del Viaje:** Tareas de cuenta regresiva (a 30 y 15 días) totalmente orientadas en la **estrategia de equipaje** (Regla de oro: Mochila Personal y Maleta 10KG "El Rollito").
+    2.  **Itinerarios y Frontera (¡Reloj Mundial!):** 
+        *   Tramos exactos entre PEI-BOG y BOG-MAD. 
+        *   Simulación de aterrizaje y control de husos horarios (Madrid +7 horas para organizar comunicación con Colombia en la llegada).
+        *   Respuestas estándar y contundentes para el paso de Migración.
 
 ---
 

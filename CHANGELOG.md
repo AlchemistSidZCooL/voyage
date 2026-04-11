@@ -1,5 +1,17 @@
 # Changelog - SoranyProyect (Ruta Migratoria)
 
+## [11-04-2026] - Rediseño Premium y Optimización Logística
+
+### Añadido
+- **Control de Husos Horarios:** Incorporadas tarjetas detalladas ("Paso 2") sobre la diferencia horaria entre Madrid (+7 horas) y Colombia para gestionar comunicaciones familiares.
+- **Micro-logística de Equipaje:** Nueva subsección en "Paso 1" describiendo taxativamente las reglas para 1 Maleta de Cabina (10KG) y 1 Mochila Personal, más listas de contenido para cada una.
+- **Timers para Tareas Previas:** En "Paso 1" se listan los requisitos críticos escalonados a "30 días" y "15 días" del vuelo.
+
+### Modificado
+- **Rediseño UI (Premium Dark Mode):** Cambio completo desde la paleta pastel a un diseño oscuro de alto contraste (`slate-950`) con destellos en Cian y Púrpura (Cyberpunk Corporativo).
+- **Escala de Fuentes:** Gran aumento del tamaño general (`text-base`, `text-lg`, `leading-loose`) solucionando el problema inicial de 'letra muy pequeña'.
+- **Enfoque de Contenido:** Repriorización del viaje y aeropuerto; detalles de vinculación como estudiante (Paso 3) pasan a segundo plano.
+
 ## [10-04-2026] - Sesión de Configuración Inicial y Git
 
 ### Añadido
