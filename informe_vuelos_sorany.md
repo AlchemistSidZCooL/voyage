@@ -10,18 +10,19 @@
 ## ✈️ Vuelos de Ida (7 de Mayo de 2026)
 
 ### 1. Conexión Nacional (Pereira - Bogotá)
-* **Vuelo:** Avianca AV9443
-* **Localizador (Confirmación) de Avianca:** ATQINS
-* **Salida de Pereira (PEI):** Jueves, 7 de mayo - 06:35
-* **Llegada a Bogotá (BOG):** Jueves, 7 de mayo - 07:30
-* **Duración:** 55 minutos
+* **Vuelo:** Avianca AV9443 (Localizador Avianca: ATQINS)
+* **Salida de Pereira (PEI):** Jueves, 7 de mayo - 06:35 AM (Hora COL)
+* **Llegada a Bogotá (BOG):** Jueves, 7 de mayo - 07:30 AM (Hora COL)
+* **Tiempo de Espera en Bogotá:** ! 12 horas y 45 minutos.
 
 ### 2. Vuelo Internacional (Bogotá - Madrid)
 * **Aerolínea:** Air Europa
 * **Fecha:** Jueves, 7 de mayo de 2026
-* **Horario de Facturación en línea habilitado:** Desde el 5 de mayo (20:15) hasta el 7 de mayo (19:15) - hora de Bogotá (GMT-5). 
+* **Horario de Facturación en línea (Apertura):** 5 de mayo, 20:15 (Hora COL). Considerando que Air Europa abre facturación exactamente 48 horas antes, deducimos que:
+* **Salida de Bogotá (BOG):** 7 de mayo - 20:15 (08:15 PM) (Hora COL).
+* **Llegada a Madrid (MAD):** Viernes, 8 de mayo - ~13:15 (01:15 PM) (Hora MAD). 
 
-*(Nota: En este rango de tiempo se puede ingresar a la web de la aerolínea para hacer el check-in online y elegir el tipo de asiento gratis).*
+*(Nota de reloj: 13:15 en España son las 06:15 AM en Colombia).*
 
 ---
 
@@ -30,7 +31,9 @@
 ### Vuelo Internacional (Madrid - Bogotá)
 * **Aerolínea:** Air Europa
 * **Fecha:** Viernes, 15 de mayo de 2026
-* **Horario de Facturación en línea habilitado:** Desde el 13 de mayo (15:15) hasta el 15 de mayo (14:15) - hora de Madrid (GMT+1).
+* **Horario de Facturación en línea (Apertura):** 13 de mayo, 15:15 (Hora MAD). 
+* **Deducción de Salida de Madrid (MAD):** 15 de mayo - 15:15 (03:15 PM) (Hora MAD).
+* **Llegada Estimada a Bogotá (BOG):** Viernes 15 de Mayo - ~18:45 (06:45 PM) (Hora COL).
 
 ---
 

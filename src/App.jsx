@@ -212,35 +212,41 @@ const App = () => {
                   </div>
                 </div>
 
-                <div className="border-l-4 border-purple-500/50 pl-6 relative">
-                  <div className="absolute -left-2.5 top-1 bg-slate-900 border-2 border-purple-500 w-4 h-4 rounded-full"></div>
-                  <h4 className="font-extrabold text-slate-100 text-2xl mb-1">Tramo 2: Bogotá (BOG) ➔ Madrid (MAD)</h4>
-                  <p className="text-purple-400 font-bold text-base mb-4 tracking-wide">Vuelo Internacional Transtlántico (Air Europa)</p>
-                  
-                  <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-2xl space-y-6">
-                     <div className="flex flex-col md:flex-row gap-8 border-b border-slate-700/50 pb-6">
-                       <div className="flex-1">
-                         <p className="text-sm text-slate-500 font-bold uppercase mb-1">Despegue BOG</p>
-                         <p className="text-2xl font-bold text-slate-400 border border-dashed border-slate-600 inline-block px-3 py-1 rounded">Hora por confirmar</p>
-                         <p className="text-sm text-slate-500 mt-2">Dato pendiente del Board Pass final.</p>
-                       </div>
-                       <div className="flex-1">
-                         <p className="text-sm text-slate-500 font-bold uppercase mb-1">Llegada a Barajas (MAD)</p>
-                         <p className="text-2xl font-bold text-slate-400 border border-dashed border-slate-600 inline-block px-3 py-1 rounded">Hora por confirmar</p>
-                       </div>
-                     </div>
-                     <div className="bg-purple-900/20 p-5 rounded-xl border border-purple-500/20 flex gap-4 items-start">
-                       <Info className="w-6 h-6 text-purple-400 flex-shrink-0" />
-                       <div>
-                         <p className="text-base text-purple-300 font-bold mb-2">Simulación de tu llegada:</p>
-                         <p className="text-base text-slate-300 leading-relaxed text-justify">
-                           Imagina que aterrizas felizmente en Madrid el viernes 8 de Mayo a las <strong>14:00 (2:00 PM)</strong> hora local de España. En ese preciso momento, en Aguadas/Manizales tu familia apenas estará despertando, pues en Colombia serán apenas las <strong>07:00 AM</strong>.
-                           <br/><strong className="text-purple-400">Es buena idea avisar esto en casa para que no se preocupen si hay silencio antes.</strong>
-                         </p>
-                       </div>
-                     </div>
+                  <div className="mt-4 mb-8 bg-indigo-950/20 p-4 rounded-xl border border-indigo-500/20 inline-flex items-center gap-3">
+                     <Clock className="w-5 h-5 text-indigo-400" />
+                     <p className="text-indigo-200 text-sm">Escala (Tiempo libre en Aeropuerto El Dorado): <strong className="text-indigo-400 text-base">~12 horas y 45 mins</strong></p>
                   </div>
-                </div>
+
+                  <div className="border-l-4 border-purple-500/50 pl-6 relative">
+                    <div className="absolute -left-2.5 top-1 bg-slate-900 border-2 border-purple-500 w-4 h-4 rounded-full"></div>
+                    <h4 className="font-extrabold text-slate-100 text-2xl mb-1">Tramo 2: Bogotá (BOG) ➔ Madrid (MAD)</h4>
+                    <p className="text-purple-400 font-bold text-base mb-4 tracking-wide">Vuelo Internacional (Air Europa)</p>
+                    
+                    <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-2xl space-y-6">
+                       <div className="flex flex-col md:flex-row gap-8 border-b border-slate-700/50 pb-6">
+                         <div className="flex-1">
+                           <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-purple-500 rotate-45"/> Despegue BOG</p>
+                           <p className="text-3xl font-bold text-slate-100">08:15 PM <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
+                           <p className="text-sm text-slate-500 mt-2">Jueves, 7 de mayo (20:15)</p>
+                         </div>
+                         <div className="flex-1">
+                           <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-amber-500 md:rotate-90"/> Aterrizaje Barajas (MAD)</p>
+                           <p className="text-3xl font-bold text-slate-100">01:15 PM <span className="text-base font-normal text-amber-500 bg-amber-950/50 border border-amber-500/20 px-2 py-1 rounded ml-2">Hora MAD 🇪🇸</span></p>
+                           <p className="text-sm text-slate-500 mt-2">Viernes, 8 de mayo (13:15)</p>
+                         </div>
+                       </div>
+                       <div className="bg-purple-900/20 p-5 rounded-xl border border-purple-500/20 flex gap-4 items-start">
+                         <Info className="w-6 h-6 text-purple-400 flex-shrink-0" />
+                         <div>
+                           <p className="text-base text-purple-300 font-bold mb-2">Tu familia en Colombia (Cero Ansiedad):</p>
+                           <p className="text-base text-slate-300 leading-relaxed text-justify">
+                             Aterrizarás a la gloriosa hora de las <strong>01:15 PM</strong> (hora de España). ¡Pero tranquila! En ese instante exacto, en Aguadas-Caldas son apenas las <strong className="text-cyan-300 bg-cyan-900/30 px-2 py-1 rounded">06:15 AM</strong>.
+                             <br/><br/><strong className="text-purple-400">La regla:</strong> Tu familia apenas se estará levantando y preparando café, así que si durante tus trámites de migración no contestas rápido, diles con anticipación que para ellos allá todavía es de madrugada y no tienen por qué preocuparse.
+                           </p>
+                         </div>
+                       </div>
+                    </div>
+                  </div>
               </div>
             </Card>
 
