@@ -1,7 +1,12 @@
 - [x] Tarea 1: Añadir fuentes modernas a `index.html` y configuraciones CSS.
-- [x] Tarea 2: Actualizar `src/App.jsx` con el nuevo diseño amigable y premium (colores pastel, tarjetas con sombra).
-- [x] Tarea 3: Modificar la información de `App.jsx` en "Paso 1" (Semáforo de tiempos para apostillas).
-- [x] Tarea 4: Modificar la información de `App.jsx` en "Paso 2" (Integrar vuelos reales CB5ES3/ATQINS).
-- [x] Tarea 5: Modificar la información de `App.jsx` en "Paso 3 y 4" (Fondos de 500k COP diarios y estadía en negociación).
+- [x] Tarea 2: Actualizar `src/App.jsx` con el nuevo diseño amigable y premium.
+- [x] Tarea 3: Modificar la información de `App.jsx` en "Paso 1" (Semáforo de tiempos).
+- [x] Tarea 4: Modificar la información de `App.jsx` en "Paso 2" (Vuelos reales).
+- [x] Tarea 5: Modificar la información de `App.jsx` en "Paso 3 y 4" (Finanzas y estadía).
 - [x] Tarea 6: Actualizar archivo `README.md`.
 - [x] Tarea 7: Crear el archivo `CHANGELOG.md` con los detalles de la v2.0.
+- [x] Tarea 8: Obtener Registro de Nacimiento (Completado por Sorany).
+- [ ] Tarea 9: Verificar Apostilla de antecedentes/registro (En proceso por Sorany).
+- [ ] Tarea 10: Investigar y definir Seguro Schengen (Dani).
+- [ ] Tarea 11: Realizar reserva de hotel cancelable (8-15 Mayo) para migración.
+- [ ] Tarea 12: Enviar póliza y reserva a Sorany para su tranquilidad.

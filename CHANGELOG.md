@@ -1,5 +1,30 @@
 # Changelog - SoranyProyect (Ruta Migratoria)
 
+## [30-04-2026] - Investigación Logística: Seguro Schengen y Reserva Hotel (v2.3)
+
+### Añadido
+- **Nueva tarjeta "Seguro Schengen" (Paso 1):** Módulo completo con los requisitos legales mínimos (30.000€ de cobertura, repatriación, sin franquicia) y comparativa de las 3 mejores opciones para viajeros colombianos: IATI Seguros (recomendado), AXA Schengen (plan Basic/Essential) y Allianz Assistance.
+- **Guion de Migración actualizado (Paso 2):** Se añadió la pregunta de "¿Tiene seguro?" con la respuesta exacta para Sorany. Se añadió el banner de estado "Documentos listos que Dani enviará antes del vuelo".
+- **Estrategia de Reserva de Hotel Cancelable:** Documentado el proceso de reserva en Booking.com con filtro "Cancelación Gratis" para obtener confirmación oficial de hotel (del 8 al 15 de mayo) sin desembolso real. Este documento sirve como prueba de alojamiento ante migración.
+- **Contexto Whatsapp (30-Abr):** Se actualizó `analisis_contexto_audhd_abril25.md` con el estado emocional de Sorany (angustia, dificultad para sentirse tranquila) y las urgencias logísticas detectadas.
+
+### Modificado
+- **`informe_tareas_pendientes.md`:** Añadidas tareas 8 (Registro de Nacimiento - ✅ completado), 9 (Apostilla - en proceso), 10, 11 y 12 relativas al seguro y la reserva de hotel.
+
+### Estado Pendiente (Acción Dani)
+- [ ] Contratar Seguro Schengen (IATI o AXA) y enviar PDF a Sorany.
+- [ ] Realizar reserva cancelable de hotel en Madrid (Booking.com, 8-15 Mayo) y enviar confirmación a Sorany.
+
+## [25-04-2026] - Integración de Contexto Neurodivergente (AuDHD) y Estado Emocional
+
+### Añadido
+- **Análisis de Contexto (AuDHD):** Se creó el documento `analisis_contexto_audhd_abril25.md` que documenta el estado emocional pre-migratorio de Sorany (ansiedad, miedos sobre su potencialidad) y la introducción del perfil neurodivergente (AuDHD).
+- **Estrategia "Zero Friction":** Se estableció la directriz de mantener la aplicación web con una carga cognitiva mínima para mitigar la ansiedad y el posible burnout pre-viaje.
+- **Registro de Video:** Se documentó la existencia del nuevo video `WhatsApp Video 2026-04-22 at 00.05.38.mp4` para su futura reinterpretación bajo la lente del nuevo contexto.
+
+### Modificado
+- **README.md:** Se actualizó la sección "Caja Fuerte del Proyecto" (Backstage) para incluir la referencia al nuevo análisis de contexto psicológico.
+
 ## [11-04-2026] - Estrategia Migratoria de 8 Días y Logística Origen (v2.2)
 
 ### Añadido

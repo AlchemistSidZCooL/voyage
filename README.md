@@ -33,6 +33,7 @@ En esta última iteración (v2.2) el portal se consolida como un **ecosistema t�
 Además de contener el código puro, este repositorio actúa como la caja fuerte digital donde estructuramos la logística de tu viaje para que no haya margen de error. Aquí dentro se almacena un ecosistema de alta precisión:
 *   Análisis técnico de tus vuelos en tiempo real (`informe_vuelos_sorany.md`).
 *   La estrategia migratoria de 8 días y desgloses de video (`informe_video_sorany.md`).
+*   Análisis de contexto psicológico y neurodivergente (AuDHD) para reducir carga cognitiva (`analisis_contexto_audhd_abril25.md`).
 *   El resguardo de las copias digitales.
 
 Toda esta arquitectura está construida como un escudo táctico para tu paso migratorio. **¡Tranquila! Tú solo entra a la App y dedícate a seguir el guion oficial. Del código complejo y la logística de fondo nos encargamos Daniel y la inteligencia artificial desde esta trinchera.**

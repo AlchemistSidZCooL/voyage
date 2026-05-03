@@ -5,7 +5,7 @@ import {
   Search, CheckCircle, ArrowRight, Info, Clock, 
   Home, AlertTriangle, Menu, X, GraduationCap, 
   Gavel, Leaf, Users, Briefcase, Calendar, 
-  DollarSign, UserCheck
+  DollarSign, UserCheck, Heart, Sparkles, Headphones
 } from 'lucide-react';
 
 const App = () => {
@@ -17,6 +17,7 @@ const App = () => {
     { id: 'frontera', title: '2. Vuelos y Maletas', icon: <Briefcase className="w-6 h-6" /> },
     { id: 'transicion', title: '3. Legal y Finanzas', icon: <ShieldCheck className="w-6 h-6" /> },
     { id: 'logistica', title: '4. Madrid', icon: <MapPin className="w-6 h-6" /> },
+    { id: 'refugio', title: '5. Espacio Seguro', icon: <Heart className="w-6 h-6" /> },
   ];
 
   const SectionWrapper = ({ children, title }) => (
@@ -131,26 +132,65 @@ const App = () => {
                 </div>
                 <div className="bg-emerald-950/30 p-5 rounded-xl border border-emerald-500/40 transform hover:-translate-y-1 transition-all shadow-lg shadow-emerald-900/20">
                   <h4 className="font-bold text-emerald-400 mb-2 flex items-center gap-2"><CheckCircle className="w-5 h-5"/> Opción Recomendada (Hotel)</h4>
-                  <p className="text-slate-300 text-sm">Viajar Aguadas ➔ Manizales ➔ Pereira el <strong className="text-white">miércoles 6 de mayo en la tarde</strong> tranquila. Quedarse en un alojamiento económico (Ej. hostal en Nacederos o la Villa, aprox $60.000) pegado al aeropuerto. Duermes bien, y a las 04:15 AM tomas el taxi que toma 5 minutos.</p>
+                  <p className="text-slate-300 text-sm">Viajar Aguadas ➔ Manizales ➔ Pereira <strong className="text-white">¡este mismo miércoles 6 de mayo en la tarde!</strong> Bajas tranquila, te quedas en un alojamiento económico (Ej. hostal en Nacederos o la Villa) pegado al aeropuerto. Duermes bien, y a las 04:15 AM tomas el taxi que toma 5 minutos.</p>
                 </div>
               </div>
             </Card>
 
-            <Card title="⏳ Cuenta Regresiva (Documental)" icon={<Clock className="w-6 h-6 text-cyan-400" />} type="info">
+            <Card title="🛡️ Seguro Schengen (OBLIGATORIO)" icon={<ShieldCheck className="w-6 h-6 text-cyan-400" />} type="info" badge="GESTIONADO POR DANI">
+              <div className="mb-5 bg-cyan-950/50 p-4 rounded-2xl border border-cyan-500/30">
+                <p className="text-cyan-200 text-base leading-relaxed">El seguro de viaje Schengen es <strong className="text-white">obligatorio</strong> para entrar a España. Aunque Colombia no necesita visa, migración puede pedírtelo en el aeropuerto para verificar que estás cubierta ante cualquier eventualidad.</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4 mb-5">
+                <div className="bg-slate-900 p-5 rounded-xl border border-slate-700/50">
+                  <h4 className="font-bold text-slate-100 mb-3 text-lg flex items-center gap-2"><ShieldCheck className="w-5 h-5 text-emerald-400"/> Cobertura Total Asegurada</h4>
+                  <p className="text-slate-300 text-sm leading-relaxed mb-3">Hemos seleccionado una póliza premium europea (AXA/IATI) que supera todos los requisitos que exige la ley de extranjería:</p>
+                  <ul className="text-slate-300 text-sm space-y-2 font-medium">
+                    <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0"></div> +30.000€ en cobertura médica.</li>
+                    <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0"></div> Válido en toda Europa.</li>
+                    <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0"></div> Cero copagos (no sacas un peso de tu bolsillo).</li>
+                  </ul>
+                </div>
+                <div className="bg-slate-900 p-5 rounded-xl border border-slate-700/50 flex flex-col justify-center">
+                  <h4 className="font-bold text-slate-100 mb-3 text-lg flex items-center gap-2"><Heart className="w-5 h-5 text-purple-400"/> Cero Estrés para Ti</h4>
+                  <p className="text-slate-300 text-sm leading-relaxed">
+                    No tienes que investigar nada, ni comparar precios, ni estresarte con letras pequeñas. <strong className="text-purple-300">Toda la gestión, pago y contratación la hace Dani desde Madrid.</strong>
+                  </p>
+                </div>
+              </div>
+              <div className="bg-emerald-950/30 p-4 rounded-xl border border-emerald-500/30 flex items-center gap-3">
+                <CheckCircle className="w-6 h-6 text-emerald-400 flex-shrink-0" />
+                <p className="text-emerald-200 text-sm lg:text-base"><strong>Siguiente paso:</strong> Unos días antes de tu vuelo, Dani te enviará el PDF oficial de la póliza. Tu única tarea es guardarlo en tu celular e imprimirlo para llevarlo en tu mochila. ¡Así de simple!</p>
+              </div>
+            </Card>
+
+            <Card title="⏳ Checklist Definitivo (Semana de Vuelo)" icon={<Clock className="w-6 h-6 text-cyan-400" />} type="info">
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-cyan-950/40 p-5 rounded-xl border border-cyan-500/20">
-                  <h4 className="font-bold text-cyan-300 mb-3 text-lg border-b border-cyan-500/20 pb-2">A 30 días del vuelo:</h4>
-                  <ul className="text-slate-300 text-base space-y-3 list-disc ml-4">
-                    <li>Confirmar cotización de seguro Schengen de viaje (Obligatorio, solo por 10 días).</li>
-                    <li>Planificar compras locales (ropa básica, adaptadores de enchufe de clavija redonda).</li>
+                  <h4 className="font-bold text-cyan-300 mb-3 text-lg border-b border-cyan-500/20 pb-2">Logística Europea (Resuelta):</h4>
+                  <ul className="text-slate-300 text-base space-y-3">
+                    <li className="flex items-center gap-2">
+                      <div className="bg-emerald-500/20 p-1 rounded-full"><CheckCircle className="w-4 h-4 text-emerald-400" /></div>
+                      <span className="line-through opacity-50">Contratar Seguro Schengen.</span>
+                      <strong className="text-emerald-400 text-sm ml-2 bg-emerald-900/30 px-2 py-0.5 rounded border border-emerald-500/20">✔️ Resuelto por Dani</strong>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="bg-emerald-500/20 p-1 rounded-full"><CheckCircle className="w-4 h-4 text-emerald-400" /></div>
+                      <span className="line-through opacity-50">Reserva de hotel en Madrid.</span>
+                      <strong className="text-emerald-400 text-sm ml-2 bg-emerald-900/30 px-2 py-0.5 rounded border border-emerald-500/20">✔️ Resuelto por Dani</strong>
+                    </li>
+                    <li className="flex items-center gap-2 text-slate-300"><div className="w-2 h-2 rounded-full bg-cyan-400 flex-shrink-0"></div> Planificar compras locales (adaptador enchufe redondo europeo).</li>
                   </ul>
                 </div>
                 <div className="bg-amber-950/40 p-5 rounded-xl border border-amber-500/20">
-                  <h4 className="font-bold text-amber-400 mb-3 text-lg border-b border-amber-500/20 pb-2">A 15 días del vuelo:</h4>
-                  <ul className="text-slate-300 text-base space-y-3 list-disc ml-4">
-                    <li>Sacar Apostilla expedita de <strong className="text-amber-200">Antecedentes Penales</strong>.</li>
-                    <li>Certificación de <strong className="text-amber-200">Registro Civil</strong> reciente.</li>
-                    <li>Dejar cerrado de antemano el Poder familiar en Notaría de Aguadas.</li>
+                  <h4 className="font-bold text-amber-400 mb-3 text-lg border-b border-amber-500/20 pb-2">Documentos Personales (¡Casi listos!):</h4>
+                  <ul className="text-slate-300 text-base space-y-3">
+                    <li className="flex items-center gap-2">
+                      <div className="bg-emerald-500/20 p-1 rounded-full"><CheckCircle className="w-4 h-4 text-emerald-400" /></div>
+                      <span className="line-through opacity-50 text-emerald-200">Certificación de Registro Civil.</span>
+                    </li>
+                    <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-amber-400 flex-shrink-0"></div> Seguimiento a Apostilla de <strong className="text-amber-200">Antecedentes Penales</strong>.</li>
+                    <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-amber-400 flex-shrink-0"></div> Dejar cerrado el Poder familiar en Notaría de Aguadas.</li>
                   </ul>
                 </div>
               </div>
@@ -265,20 +305,31 @@ const App = () => {
             </Card>
 
             <Card title="🇪🇸 Migración en Madrid (El Guion Oficial)" icon={<ShieldCheck className="w-6 h-6 text-cyan-400" />} type="info">
+               <div className="mb-6 bg-emerald-950/30 p-4 rounded-2xl border border-emerald-500/30 flex items-start gap-3">
+                 <CheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                 <div>
+                   <p className="text-emerald-200 text-sm font-bold mb-1">Documentos listos que Dani te enviará antes de volar:</p>
+                   <p className="text-emerald-100/80 text-sm">✅ Póliza de Seguro Schengen (PDF) &nbsp;·&nbsp; ✅ Confirmación de Reserva de Hotel (PDF imprimible)</p>
+                 </div>
+               </div>
                <div className="text-slate-300 space-y-4 leading-relaxed text-lg mb-8">
                   <p>Frente a Inmigración y <strong>"Control de Pasaportes"</strong> tu actitud debe ser 100% transparente y segura, eres una turista legítima con 1 semana por delante.</p>
                   <ul className="bg-cyan-950/30 p-6 rounded-2xl border border-cyan-500/20 space-y-5 mt-4">
                      <li className="flex flex-col sm:flex-row gap-3 items-start border-b border-cyan-500/10 pb-4">
                        <strong className="text-cyan-400 min-w-48 text-base">👮‍♂️ "¿A qué viene?"</strong> 
-                       <span className="text-slate-200">"Venimos de turismo a conocer Madrid. Son unas vacaciones cortas, acá tengo el vuelo de retorno para el día 15."</span>
+                       <span className="text-slate-200">"Vengo de turismo a conocer Madrid. Son unas vacaciones cortas de 8 días, acá tengo el vuelo de retorno para el día 15."</span>
                      </li>
                      <li className="flex flex-col sm:flex-row gap-3 items-start border-b border-cyan-500/10 pb-4">
                        <strong className="text-cyan-400 min-w-48 text-base">👮‍♂️ "¿Dónde se aloja?"</strong> 
-                       <span className="text-slate-200">(Simplemente entregas en la mano tu hoja impresa con la <em>Reserva de Hotel</em>).</span>
+                       <span className="text-slate-200">(Entregas en mano la hoja impresa con la <em>Reserva de Hotel en Madrid</em>, del 8 al 15 de mayo). El agente ve el nombre del hotel, tu nombre y las fechas.</span>
+                     </li>
+                     <li className="flex flex-col sm:flex-row gap-3 items-start border-b border-cyan-500/10 pb-4">
+                       <strong className="text-cyan-400 min-w-48 text-base">👮‍♂️ "¿Tiene seguro?"</strong> 
+                       <span className="text-slate-200">(Entregas la póliza del Seguro Schengen). "Sí, tengo seguro de viaje con cobertura de 30.000€ válido durante toda mi estancia."</span>
                      </li>
                      <li className="flex flex-col sm:flex-row gap-3 items-start">
                        <strong className="text-cyan-400 min-w-48 text-base">👮‍♂️ "¿Dinero para su estadía?"</strong> 
-                       <span className="text-slate-200">"El mínimo de la ley son 113€ al día. Yo estoy 8 días, traigo conmigo <strong className="text-emerald-400 bg-emerald-900/30 px-2 rounded">1,000€</strong> para cubrirlo 100%." (Y los muestras).</span>
+                       <span className="text-slate-200">"El mínimo son 113€ al día. Estoy 8 días, traigo <strong className="text-emerald-400 bg-emerald-900/30 px-2 rounded">1,000€</strong> para cubrirlo de sobra." (Y los muestras).</span>
                      </li>
                   </ul>
                </div>
@@ -369,13 +420,13 @@ const App = () => {
         {activeTab === 'logistica' && (
           <SectionWrapper key="logistica" title="Paso 4: Logística en Madrid">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <Card title="🏠 El Piso (Alojamiento)" icon={<MapPin className="w-6 h-6 text-amber-400" />} type="warning">
-                <div className="flex items-center gap-3 mb-5 inline-flex bg-amber-500/10 border border-amber-500/30 text-amber-400 px-4 py-1.5 rounded-full">
-                  <Clock className="w-4 h-4 animate-pulse" />
-                  <span className="font-bold text-sm tracking-widest uppercase">En negociaciones</span>
+              <Card title="🏠 Tu Alojamiento Seguro" icon={<MapPin className="w-6 h-6 text-emerald-400" />} type="success">
+                <div className="flex items-center gap-3 mb-5 inline-flex bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-4 py-1.5 rounded-full">
+                  <CheckCircle className="w-4 h-4" />
+                  <span className="font-bold text-sm tracking-widest uppercase">Llegas a mi casa</span>
                 </div>
-                <p className="text-amber-100/80 leading-relaxed text-lg">
-                  Sabemos que esto te genera preocupación, pero <strong className="text-amber-300">tu única misión ahora es venir a España tranquilamente</strong>. La confirmación del piso y la dirección oficial la tendrás a más tardar la primera semana de Mayo.
+                <p className="text-emerald-100/80 leading-relaxed text-lg">
+                  <strong className="text-white">Cero estrés:</strong> Como te dije por WhatsApp, vas a llegar directamente a mi casa para estar cómoda y tranquila. Sin embargo, <strong className="text-emerald-300">para efectos de migración</strong>, te enviaré un papel oficial con una "Reserva de Hotel" de 8 días. A migración le muestras ese papel del hotel, pero tú y yo sabemos que vas directo a mi casa. Tu única misión ahora es venir a España tranquilamente.
                 </p>
               </Card>
               
@@ -397,6 +448,64 @@ const App = () => {
                    </li>
                  </ul>
               </Card>
+            </div>
+          </SectionWrapper>
+        )}
+
+        {activeTab === 'refugio' && (
+          <SectionWrapper key="refugio" title="Refugio: Tu Espacio de Anclaje">
+            <div className="space-y-6">
+              
+              <div className="bg-indigo-950/20 border border-indigo-500/20 backdrop-blur-md rounded-3xl p-8 hover:bg-indigo-900/30 transition-all duration-300">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                  <h3 className="font-bold text-slate-100 flex items-center gap-3 text-xl tracking-wide">
+                    <Heart className="w-6 h-6 text-indigo-400" />
+                    El Anclaje (Cero Fricción)
+                  </h3>
+                </div>
+                <p className="text-indigo-100/90 text-lg leading-relaxed">
+                  Es normal sentir que estás entre la espada y la pared. La ansiedad que sientes no es que algo vaya a salir mal, es tu cuerpo procesando un cambio gigante. De la logística pesada, las apostillas y los cálculos nos encargamos nosotros. Tu única misión es respirar, empacar ligero y subirte al avión.
+                </p>
+              </div>
+
+              <div className="bg-purple-950/20 border border-purple-500/20 backdrop-blur-md rounded-3xl p-8 hover:bg-purple-900/30 transition-all duration-300">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                  <h3 className="font-bold text-slate-100 flex items-center gap-3 text-xl tracking-wide">
+                    <Sparkles className="w-6 h-6 text-purple-400" />
+                    Los Superpoderes y la Aventura
+                  </h3>
+                </div>
+                <p className="text-purple-100/90 text-lg leading-relaxed">
+                  Esa sensación de 'potencialidad infinita' que alguna vez te asustó o te hizo perderte, ahora tiene un marco seguro. No estás sola esta vez. España no es solo un destino, es el lienzo donde vas a aprender a manejar esos superpoderes a tu propio ritmo.
+                </p>
+              </div>
+
+              <div className="bg-emerald-950/20 border border-emerald-500/20 backdrop-blur-md rounded-3xl p-8 hover:bg-emerald-900/30 transition-all duration-300">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                  <h3 className="font-bold text-slate-100 flex items-center gap-3 text-xl tracking-wide">
+                    <Headphones className="w-6 h-6 text-emerald-400" />
+                    Protocolo de Aterrizaje Suave
+                  </h3>
+                </div>
+                <p className="text-emerald-100/90 text-lg leading-relaxed mb-4">
+                  Al llegar a Barajas (Madrid), el objetivo principal no es hablar ni tramitar nada. Es bajar las revoluciones y descompresionar. Sigue este protocolo:
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <div className="bg-emerald-500/20 p-1.5 rounded-lg text-emerald-400 mt-0.5"><CheckCircle className="w-4 h-4"/></div>
+                    <span className="text-emerald-50 text-base"><strong>Música y Aislamiento:</strong> Si hay ruido o sobreestimulación en el aeropuerto, usa tus auriculares.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="bg-emerald-500/20 p-1.5 rounded-lg text-emerald-400 mt-0.5"><CheckCircle className="w-4 h-4"/></div>
+                    <span className="text-emerald-50 text-base"><strong>Viaje en Silencio:</strong> El trayecto desde el aeropuerto hasta el piso puede ser en completo silencio si lo deseas. Nadie te exigirá estar comunicativa.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="bg-emerald-500/20 p-1.5 rounded-lg text-emerald-400 mt-0.5"><CheckCircle className="w-4 h-4"/></div>
+                    <span className="text-emerald-50 text-base"><strong>Descanso Prioritario:</strong> Al llegar al piso, el tiempo será exclusivo para dormir y estabilizar tu ciclo. Cero trámites el primer día.</span>
+                  </li>
+                </ul>
+              </div>
+
             </div>
           </SectionWrapper>
         )}
