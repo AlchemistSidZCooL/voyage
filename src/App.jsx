@@ -137,43 +137,41 @@ const App = () => {
               </div>
             </Card>
 
-            <Card title="🛡️ Seguro Schengen (OBLIGATORIO)" icon={<ShieldCheck className="w-6 h-6 text-cyan-400" />} type="info" badge="ACCIÓN REQUERIDA">
-              <div className="mb-5 bg-cyan-950/50 p-4 rounded-2xl border border-cyan-500/30">
-                <p className="text-cyan-200 text-base leading-relaxed">El seguro de viaje Schengen es <strong className="text-white">obligatorio</strong> para entrar a España. Para evitar problemas con la dirección física, <strong className="text-white">Sorany realizará la compra directa</strong> siguiendo estos pasos:</p>
+            <Card title="🛡️ Seguro y Alojamiento Schengen" icon={<ShieldCheck className="w-6 h-6 text-emerald-400" />} type="success" badge="COMPLETADO">
+              <div className="mb-5 bg-emerald-950/30 p-4 rounded-2xl border border-emerald-500/30 flex items-center gap-3">
+                <CheckCircle className="w-6 h-6 text-emerald-400 flex-shrink-0" />
+                <p className="text-emerald-200 text-base leading-relaxed">¡Requisitos migratorios blindados! Tanto la póliza de seguro de viaje como la reserva oficial de alojamiento han sido contratadas, corregidas y verificadas de forma exitosa.</p>
               </div>
               
-              <div className="space-y-4 mb-6">
-                <div className="bg-slate-900/80 p-5 rounded-2xl border border-white/5 hover:border-cyan-500/30 transition-all">
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="bg-slate-900/80 p-5 rounded-2xl border border-emerald-500/20 hover:border-emerald-500/40 transition-all">
                   <h4 className="font-bold text-slate-100 mb-3 flex items-center gap-2">
-                    <span className="bg-cyan-500 text-slate-950 w-6 h-6 rounded-full flex items-center justify-center text-xs">1</span>
-                    Seguro IATI (Paso a Paso)
+                    <CheckCircle className="w-5 h-5 text-emerald-400" />
+                    Póliza Médica Schengen
                   </h4>
-                  <ul className="text-slate-300 text-sm space-y-2 ml-8 list-disc">
-                    <li>Entrar a <a href="https://www.iatiseguros.com/" target="_blank" className="text-cyan-400 underline font-bold">iatiseguros.com</a></li>
-                    <li>Origen: <strong>Colombia</strong> / Destino: <strong>España</strong></li>
-                    <li>Fechas: <strong>07/05/2026 al 15/05/2026</strong></li>
-                    <li>Elegir plan: <strong className="text-white underline">IATI Básico</strong> (aprox. 96k COP)</li>
-                    <li>Pagar y descargar el PDF de la póliza.</li>
-                  </ul>
+                  <p className="text-slate-300 text-sm leading-relaxed">
+                    <strong>Compañía:</strong> IATI Seguros<br/>
+                    <strong>Producto:</strong> IATI Básico (Cobertura de urgencias médicas completa)<br/>
+                    <strong>Estado:</strong> ✅ EMITIDA (Datos de fecha corregidos manualmente para migración).
+                  </p>
                 </div>
 
-                <div className="bg-slate-900/80 p-5 rounded-2xl border border-white/5 hover:border-emerald-500/30 transition-all">
+                <div className="bg-slate-900/80 p-5 rounded-2xl border border-emerald-500/20 hover:border-emerald-500/40 transition-all">
                   <h4 className="font-bold text-slate-100 mb-3 flex items-center gap-2">
-                    <span className="bg-emerald-500 text-slate-950 w-6 h-6 rounded-full flex items-center justify-center text-xs">2</span>
-                    Reserva Hostal (Booking)
+                    <CheckCircle className="w-5 h-5 text-emerald-400" />
+                    Reserva de Alojamiento
                   </h4>
-                  <ul className="text-slate-300 text-sm space-y-2 ml-8 list-disc">
-                    <li>Entrar a <a href="https://www.booking.com/" target="_blank" className="text-emerald-400 underline font-bold">booking.com</a></li>
-                    <li>Destino: <strong>Madrid</strong> / Fechas: <strong>08/05 al 15/05</strong></li>
-                    <li>Filtros obligatorios: <strong className="text-white">Cancelación gratuita</strong> y <strong className="text-white">Sin pago por adelantado</strong></li>
-                    <li>Descargar confirmación en PDF para migración.</li>
-                  </ul>
+                  <p className="text-slate-300 text-sm leading-relaxed">
+                    <strong>Plataforma:</strong> Booking.com<br/>
+                    <strong>Tipo:</strong> Habitación Familiar (Cancelable)<br/>
+                    <strong>Estado:</strong> ✅ RESERVADA (Confirmación oficial en PDF lista para imprimir).
+                  </p>
                 </div>
               </div>
 
-              <div className="bg-emerald-950/30 p-4 rounded-xl border border-emerald-500/30 flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-emerald-400 flex-shrink-0" />
-                <p className="text-emerald-200 text-sm lg:text-base"><strong>Importante:</strong> Una vez tengas ambos PDFs, envíalos a Dani. Él se encargará de guardarlos y cancelar la reserva de Booking en el momento oportuno.</p>
+              <div className="bg-cyan-950/30 p-4 rounded-xl border border-cyan-500/30 flex items-center gap-3">
+                <Info className="w-6 h-6 text-cyan-400 flex-shrink-0" />
+                <p className="text-cyan-200 text-sm"><strong>Paso final:</strong> Dani te enviará los PDFs oficiales de ambos documentos antes de que vueles. Solo debes llevarlos guardados en tu móvil (y una copia impresa en tu mochila de mano para total tranquilidad).</p>
               </div>
             </Card>
 
@@ -183,14 +181,12 @@ const App = () => {
                   <h4 className="font-bold text-cyan-300 mb-3 text-lg border-b border-cyan-500/20 pb-2">Logística Europea (Resuelta):</h4>
                   <ul className="text-slate-300 text-base space-y-3">
                     <li className="flex items-center gap-2">
-                      <div className="bg-cyan-500/20 p-1 rounded-full"><Clock className="w-4 h-4 text-cyan-400" /></div>
-                      <span>Contratar Seguro Schengen.</span>
-                      <strong className="text-cyan-400 text-sm ml-2 bg-cyan-900/30 px-2 py-0.5 rounded border border-cyan-500/20">Acción Sorany</strong>
+                      <div className="bg-emerald-500/20 p-1 rounded-full"><CheckCircle className="w-4 h-4 text-emerald-400" /></div>
+                      <span className="line-through opacity-50 text-emerald-200">Contratar Seguro Schengen.</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="bg-cyan-500/20 p-1 rounded-full"><Clock className="w-4 h-4 text-cyan-400" /></div>
-                      <span>Reserva de hotel en Madrid.</span>
-                      <strong className="text-cyan-400 text-sm ml-2 bg-cyan-900/30 px-2 py-0.5 rounded border border-cyan-500/20">Acción Sorany</strong>
+                      <div className="bg-emerald-500/20 p-1 rounded-full"><CheckCircle className="w-4 h-4 text-emerald-400" /></div>
+                      <span className="line-through opacity-50 text-emerald-200">Reserva de hotel en Madrid.</span>
                     </li>
                     <li className="flex items-center gap-2 text-slate-300"><div className="w-2 h-2 rounded-full bg-cyan-400 flex-shrink-0"></div> Planificar compras locales (adaptador enchufe redondo europeo).</li>
                   </ul>
