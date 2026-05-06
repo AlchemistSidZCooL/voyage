@@ -271,7 +271,7 @@ const App = () => {
                   </div>
                   <div className="mt-4 grid sm:grid-cols-3 gap-3">
                     <div className="bg-cyan-950/30 p-3 rounded-xl border border-cyan-500/20 flex items-center gap-2">
-                      <span className="text-cyan-400 font-bold text-sm">🪑 Asiento</span>
+                      <span className="text-cyan-400 font-bold text-sm">🪑 Silla</span>
                       <span className="text-slate-100 font-extrabold text-lg">17K</span>
                       <span className="text-slate-400 text-xs">Grupo E</span>
                     </div>
@@ -296,9 +296,21 @@ const App = () => {
                     <h4 className="font-extrabold text-slate-100 text-2xl mb-1">Tramo 2: Bogotá (BOG) ➔ Madrid (MAD)</h4>
                     <p className="text-purple-400 font-bold text-base mb-4 tracking-wide">Air Europa UX 194 · Boeing 787-8 · Localizador: CB5ES3</p>
 
-                    <div className="mb-4 flex items-center gap-3 bg-emerald-900/30 border border-emerald-500/40 px-5 py-3 rounded-xl">
-                      <CheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                      <span className="text-emerald-200 font-bold text-base">✈️ CHECK-IN REALIZADO · Sello <span className="text-emerald-300 bg-emerald-900/50 px-2 py-0.5 rounded border border-emerald-500/30">SKYCLEARED</span> — Ve directo a la puerta de embarque</span>
+                    <div className="mb-6 bg-emerald-950/40 border-2 border-emerald-500/50 p-5 rounded-2xl space-y-3">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="w-6 h-6 text-emerald-400 flex-shrink-0" />
+                          <span className="text-emerald-200 font-extrabold text-lg uppercase tracking-wide">
+                            🚀 ¡Check-In Confirmado!
+                          </span>
+                        </div>
+                        <span className="bg-emerald-500 text-slate-950 font-black text-xs px-3 py-1 rounded-full uppercase tracking-widest border border-emerald-300/30 self-start sm:self-auto">
+                          Sello SKYCLEARED
+                        </span>
+                      </div>
+                      <p className="text-slate-300 text-sm leading-relaxed text-justify">
+                        <strong className="text-emerald-300">¿Qué significa esto para ti?</strong> Al viajar con equipaje de mano y mochila de cabina sin facturar en bodega, <strong className="text-white font-bold">no necesitas hacer las largas filas de los mostradores de Air Europa</strong> para registrar maletas. Al llegar al Aeropuerto El Dorado en Bogotá, puedes pasar <strong className="text-emerald-300 font-bold">directamente al filtro de seguridad/migración</strong> y luego a tu puerta de embarque con tu pasabordo digital en el móvil. ¡Cero filas de facturación, cero demoras y cero estrés! ✈️✨
+                      </p>
                     </div>
                     
                     <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-2xl space-y-6">
@@ -316,7 +328,7 @@ const App = () => {
                        </div>
                        <div className="grid sm:grid-cols-3 gap-3">
                          <div className="bg-cyan-950/30 p-3 rounded-xl border border-cyan-500/20 flex items-center gap-2">
-                           <span className="text-cyan-400 font-bold text-sm">🪑 Asiento</span>
+                           <span className="text-cyan-400 font-bold text-sm">🪑 Silla</span>
                            <span className="text-slate-100 font-extrabold text-lg">29A</span>
                            <span className="text-slate-400 text-xs">Zona 4</span>
                          </div>
