@@ -343,7 +343,8 @@ const App = () => {
                          </div>
                        </div>
                     </div>
-              </div>
+                  </div>
+               </div>
             </Card>
 
             <Card title="🇪🇸 Migración en Madrid (El Guion Oficial)" icon={<ShieldCheck className="w-6 h-6 text-cyan-400" />} type="info">
