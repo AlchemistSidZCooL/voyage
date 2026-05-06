@@ -123,7 +123,7 @@ const App = () => {
             
             <Card title="🚕 Transporte Interno (Aguadas ➔ Pereira)" icon={<MapPin className="w-6 h-6 text-amber-400" />} type="warning">
               <div className="mb-4 text-slate-300 text-lg">
-                Tu vuelo a Bogotá sale desde Pereira a las <strong className="text-cyan-400">06:35 AM</strong>. Eso significa que debes estar parada en el counter del Aeropuerto Matecaña a las <strong className="text-amber-400 bg-amber-900/30 px-2 rounded">04:30 AM</strong> en punto.
+                Tu vuelo a Bogotá sale desde Pereira a las <strong className="text-cyan-400">06:35 AM 🇨🇴 (13:35 🇪🇸)</strong>. Eso significa que debes estar parada en el counter del Aeropuerto Matecaña a las <strong className="text-amber-400 bg-amber-900/30 px-2 rounded">04:30 AM 🇨🇴 (11:30 🇪🇸)</strong> en punto.
               </div>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-slate-950/50 p-5 rounded-xl border border-red-500/20 opacity-80">
@@ -132,7 +132,7 @@ const App = () => {
                 </div>
                 <div className="bg-emerald-950/30 p-5 rounded-xl border border-emerald-500/40 transform hover:-translate-y-1 transition-all shadow-lg shadow-emerald-900/20">
                   <h4 className="font-bold text-emerald-400 mb-2 flex items-center gap-2"><CheckCircle className="w-5 h-5"/> Opción Recomendada (Hotel)</h4>
-                  <p className="text-slate-300 text-sm">Viajar Aguadas ➔ Manizales ➔ Pereira <strong className="text-white">¡este mismo miércoles 6 de mayo en la tarde!</strong> Bajas tranquila, te quedas en un alojamiento económico (Ej. hostal en Nacederos o la Villa) pegado al aeropuerto. Duermes bien, y a las 04:15 AM tomas el taxi que toma 5 minutos.</p>
+                  <p className="text-slate-300 text-sm">Viajar Aguadas ➔ Manizales ➔ Pereira <strong className="text-white">¡este mismo miércoles 6 de mayo en la tarde!</strong> Bajas tranquila, te quedas en un alojamiento económico (Ej. hostal en Nacederos o la Villa) pegado al aeropuerto. Duermes bien, y a las <strong className="text-emerald-300 font-bold">04:15 AM 🇨🇴 (11:15 🇪🇸)</strong> tomas el taxi que toma 5 minutos.</p>
                 </div>
               </div>
             </Card>
@@ -262,11 +262,17 @@ const App = () => {
                   <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-2xl flex flex-col md:flex-row gap-8 items-center">
                      <div className="flex-1">
                        <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-cyan-500 rotate-45"/> Despegue PEI</p>
-                       <p className="text-3xl font-bold text-slate-100">06:35 <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
+                       <div className="flex flex-col gap-1">
+                         <p className="text-3xl font-bold text-slate-100">06:35 <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-0.5 rounded ml-2">COL 🇨🇴</span></p>
+                         <p className="text-sm text-slate-400">13:35 <span className="text-xs text-amber-500 bg-amber-950/40 px-1.5 py-0.5 rounded">MAD 🇪🇸</span></p>
+                       </div>
                      </div>
                      <div className="flex-1">
                        <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-cyan-500 md:rotate-90"/> Aterrizaje BOG</p>
-                       <p className="text-3xl font-bold text-slate-100">07:30 <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
+                       <div className="flex flex-col gap-1">
+                         <p className="text-3xl font-bold text-slate-100">07:30 <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-0.5 rounded ml-2">COL 🇨🇴</span></p>
+                         <p className="text-sm text-slate-400">14:30 <span className="text-xs text-amber-500 bg-amber-950/40 px-1.5 py-0.5 rounded">MAD 🇪🇸</span></p>
+                       </div>
                      </div>
                   </div>
                   <div className="mt-4 grid sm:grid-cols-3 gap-3">
@@ -275,9 +281,16 @@ const App = () => {
                       <span className="text-slate-100 font-extrabold text-lg">17K</span>
                       <span className="text-slate-400 text-xs">Grupo E</span>
                     </div>
-                    <div className="bg-amber-950/20 p-3 rounded-xl border border-amber-500/20 flex items-center gap-2">
-                      <AlertTriangle className="w-4 h-4 text-amber-500 flex-shrink-0" />
-                      <span className="text-amber-200 text-sm">Presentarse en sala: <strong className="text-amber-400">05:35</strong></span>
+                    <div className="bg-amber-950/20 p-3 rounded-xl border border-amber-500/20 flex flex-col gap-1 justify-center">
+                      <div className="flex items-center gap-2">
+                        <AlertTriangle className="w-4 h-4 text-amber-500 flex-shrink-0" />
+                        <span className="text-amber-200 text-sm">Presentarse en sala:</span>
+                      </div>
+                      <div className="text-slate-300 text-sm pl-6">
+                        <strong>05:35</strong> <span className="text-xs text-slate-400 bg-slate-800 px-1 py-0.5 rounded">COL 🇨🇴</span>
+                        <span className="mx-1">·</span>
+                        <strong>12:35</strong> <span className="text-xs text-amber-500 bg-amber-950/30 px-1 py-0.5 rounded">MAD 🇪🇸</span>
+                      </div>
                     </div>
                     <div className="bg-emerald-950/20 p-3 rounded-xl border border-emerald-500/20 flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0" />
@@ -317,12 +330,14 @@ const App = () => {
                        <div className="flex flex-col md:flex-row gap-8 border-b border-slate-700/50 pb-6">
                          <div className="flex-1">
                            <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-purple-500 rotate-45"/> Despegue BOG</p>
-                           <p className="text-3xl font-bold text-slate-100">20:15 <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
+                           <p className="text-3xl font-bold text-slate-100">20:15 <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-0.5 rounded ml-2">COL 🇨🇴</span></p>
+                            <p className="text-sm text-slate-400">03:15 <span className="text-xs text-amber-500 bg-amber-950/40 px-1.5 py-0.5 rounded">MAD (Vie 8) 🇪🇸</span></p>
                            <p className="text-sm text-slate-500 mt-2">Jueves, 7 de mayo · El Dorado T1</p>
                          </div>
                          <div className="flex-1">
                            <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-amber-500 md:rotate-90"/> Aterrizaje Barajas (MAD)</p>
-                           <p className="text-3xl font-bold text-slate-100">13:00 <span className="text-base font-normal text-amber-500 bg-amber-950/50 border border-amber-500/20 px-2 py-1 rounded ml-2">Hora MAD 🇪🇸</span></p>
+                           <p className="text-3xl font-bold text-slate-100">13:00 <span className="text-base font-normal text-amber-500 bg-amber-950/50 border border-amber-500/20 px-2 py-0.5 rounded ml-2">MAD 🇪🇸</span></p>
+                            <p className="text-sm text-slate-400">06:00 <span className="text-xs text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">COL 🇨🇴</span></p>
                            <p className="text-sm text-slate-500 mt-2">Viernes, 8 de mayo · Adolfo Suárez T1</p>
                          </div>
                        </div>
@@ -427,7 +442,7 @@ const App = () => {
                  <div className="bg-slate-900 border-l-2 border-emerald-500 rounded p-4">
                    <div className="text-emerald-300 font-bold text-sm mb-1 uppercase tracking-wider">Día 8: Viernes 15</div>
                    <strong className="text-slate-200 block mb-1">Fin del Turismo y Vuelo</strong>
-                   <span className="text-slate-400 text-sm">Dirigirse a la T4 del Aeropuerto de Barajas a las 11:30 AM para vuelo de retorno a Bogotá.</span>
+                   <span className="text-slate-400 text-sm">Dirigirse a la T4 del Aeropuerto de Barajas a las 11:30 AM 🇪🇸 (04:30 AM 🇨🇴) para vuelo de retorno a Bogotá.</span>
                  </div>
                </div>
             </Card>
