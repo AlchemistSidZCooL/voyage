@@ -46,4 +46,5 @@ Toda esta arquitectura está construida como un escudo táctico para tu paso mig
 *   **Configuración de Acceso:** Se utiliza **SSH** (`git@github.com...`) para evitar el uso de contraseñas.
 *   **Identidad de Git:**
     *   **User:** Daniel Sid (`garciadanielsid@gmail.com`)
+    *   **Sorany:** `florezsorany8@gmail.com`
     *   **SSH Identity:** `DSidCode` (invitado como colaborador en el repo de AlchemistSidZCooL).

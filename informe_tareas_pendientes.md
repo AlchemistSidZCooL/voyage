@@ -7,6 +7,6 @@
 - [x] Tarea 7: Crear el archivo `CHANGELOG.md` con los detalles de la v2.0.
 - [x] Tarea 8: Obtener Registro de Nacimiento (Completado por Sorany).
 - [ ] Tarea 9: Verificar Apostilla de antecedentes/registro (En proceso por Sorany).
-- [ ] Tarea 10: Investigar y definir Seguro Schengen (Dani).
-- [ ] Tarea 11: Realizar reserva de hotel cancelable (8-15 Mayo) para migración.
-- [ ] Tarea 12: Enviar póliza y reserva a Sorany para su tranquilidad.
+- [x] Tarea 10: Definir Seguro Schengen y crear guía de compra (Sorany lo comprará directamente siguiendo instrucciones en la Web).
+- [x] Tarea 11: Reserva de hotel cancelable completada. PDF recibido y guardado en el proyecto.
+- [ ] Tarea 12: Recibir PDFs de Sorany para centralización y control migratorio.

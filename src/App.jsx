@@ -137,30 +137,43 @@ const App = () => {
               </div>
             </Card>
 
-            <Card title="🛡️ Seguro Schengen (OBLIGATORIO)" icon={<ShieldCheck className="w-6 h-6 text-cyan-400" />} type="info" badge="GESTIONADO POR DANI">
+            <Card title="🛡️ Seguro Schengen (OBLIGATORIO)" icon={<ShieldCheck className="w-6 h-6 text-cyan-400" />} type="info" badge="ACCIÓN REQUERIDA">
               <div className="mb-5 bg-cyan-950/50 p-4 rounded-2xl border border-cyan-500/30">
-                <p className="text-cyan-200 text-base leading-relaxed">El seguro de viaje Schengen es <strong className="text-white">obligatorio</strong> para entrar a España. Aunque Colombia no necesita visa, migración puede pedírtelo en el aeropuerto para verificar que estás cubierta ante cualquier eventualidad.</p>
+                <p className="text-cyan-200 text-base leading-relaxed">El seguro de viaje Schengen es <strong className="text-white">obligatorio</strong> para entrar a España. Para evitar problemas con la dirección física, <strong className="text-white">Sorany realizará la compra directa</strong> siguiendo estos pasos:</p>
               </div>
-              <div className="grid md:grid-cols-2 gap-4 mb-5">
-                <div className="bg-slate-900 p-5 rounded-xl border border-slate-700/50">
-                  <h4 className="font-bold text-slate-100 mb-3 text-lg flex items-center gap-2"><ShieldCheck className="w-5 h-5 text-emerald-400"/> Cobertura Total Asegurada</h4>
-                  <p className="text-slate-300 text-sm leading-relaxed mb-3">Hemos seleccionado una póliza premium europea (AXA/IATI) que supera todos los requisitos que exige la ley de extranjería:</p>
-                  <ul className="text-slate-300 text-sm space-y-2 font-medium">
-                    <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0"></div> +30.000€ en cobertura médica.</li>
-                    <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0"></div> Válido en toda Europa.</li>
-                    <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0"></div> Cero copagos (no sacas un peso de tu bolsillo).</li>
+              
+              <div className="space-y-4 mb-6">
+                <div className="bg-slate-900/80 p-5 rounded-2xl border border-white/5 hover:border-cyan-500/30 transition-all">
+                  <h4 className="font-bold text-slate-100 mb-3 flex items-center gap-2">
+                    <span className="bg-cyan-500 text-slate-950 w-6 h-6 rounded-full flex items-center justify-center text-xs">1</span>
+                    Seguro IATI (Paso a Paso)
+                  </h4>
+                  <ul className="text-slate-300 text-sm space-y-2 ml-8 list-disc">
+                    <li>Entrar a <a href="https://www.iatiseguros.com/" target="_blank" className="text-cyan-400 underline font-bold">iatiseguros.com</a></li>
+                    <li>Origen: <strong>Colombia</strong> / Destino: <strong>España</strong></li>
+                    <li>Fechas: <strong>07/05/2026 al 15/05/2026</strong></li>
+                    <li>Elegir plan: <strong className="text-white underline">IATI Básico</strong> (aprox. 96k COP)</li>
+                    <li>Pagar y descargar el PDF de la póliza.</li>
                   </ul>
                 </div>
-                <div className="bg-slate-900 p-5 rounded-xl border border-slate-700/50 flex flex-col justify-center">
-                  <h4 className="font-bold text-slate-100 mb-3 text-lg flex items-center gap-2"><Heart className="w-5 h-5 text-purple-400"/> Cero Estrés para Ti</h4>
-                  <p className="text-slate-300 text-sm leading-relaxed">
-                    No tienes que investigar nada, ni comparar precios, ni estresarte con letras pequeñas. <strong className="text-purple-300">Toda la gestión, pago y contratación la hace Dani desde Madrid.</strong>
-                  </p>
+
+                <div className="bg-slate-900/80 p-5 rounded-2xl border border-white/5 hover:border-emerald-500/30 transition-all">
+                  <h4 className="font-bold text-slate-100 mb-3 flex items-center gap-2">
+                    <span className="bg-emerald-500 text-slate-950 w-6 h-6 rounded-full flex items-center justify-center text-xs">2</span>
+                    Reserva Hostal (Booking)
+                  </h4>
+                  <ul className="text-slate-300 text-sm space-y-2 ml-8 list-disc">
+                    <li>Entrar a <a href="https://www.booking.com/" target="_blank" className="text-emerald-400 underline font-bold">booking.com</a></li>
+                    <li>Destino: <strong>Madrid</strong> / Fechas: <strong>08/05 al 15/05</strong></li>
+                    <li>Filtros obligatorios: <strong className="text-white">Cancelación gratuita</strong> y <strong className="text-white">Sin pago por adelantado</strong></li>
+                    <li>Descargar confirmación en PDF para migración.</li>
+                  </ul>
                 </div>
               </div>
+
               <div className="bg-emerald-950/30 p-4 rounded-xl border border-emerald-500/30 flex items-center gap-3">
                 <CheckCircle className="w-6 h-6 text-emerald-400 flex-shrink-0" />
-                <p className="text-emerald-200 text-sm lg:text-base"><strong>Siguiente paso:</strong> Unos días antes de tu vuelo, Dani te enviará el PDF oficial de la póliza. Tu única tarea es guardarlo en tu celular e imprimirlo para llevarlo en tu mochila. ¡Así de simple!</p>
+                <p className="text-emerald-200 text-sm lg:text-base"><strong>Importante:</strong> Una vez tengas ambos PDFs, envíalos a Dani. Él se encargará de guardarlos y cancelar la reserva de Booking en el momento oportuno.</p>
               </div>
             </Card>
 
@@ -170,14 +183,14 @@ const App = () => {
                   <h4 className="font-bold text-cyan-300 mb-3 text-lg border-b border-cyan-500/20 pb-2">Logística Europea (Resuelta):</h4>
                   <ul className="text-slate-300 text-base space-y-3">
                     <li className="flex items-center gap-2">
-                      <div className="bg-emerald-500/20 p-1 rounded-full"><CheckCircle className="w-4 h-4 text-emerald-400" /></div>
-                      <span className="line-through opacity-50">Contratar Seguro Schengen.</span>
-                      <strong className="text-emerald-400 text-sm ml-2 bg-emerald-900/30 px-2 py-0.5 rounded border border-emerald-500/20">✔️ Resuelto por Dani</strong>
+                      <div className="bg-cyan-500/20 p-1 rounded-full"><Clock className="w-4 h-4 text-cyan-400" /></div>
+                      <span>Contratar Seguro Schengen.</span>
+                      <strong className="text-cyan-400 text-sm ml-2 bg-cyan-900/30 px-2 py-0.5 rounded border border-cyan-500/20">Acción Sorany</strong>
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="bg-emerald-500/20 p-1 rounded-full"><CheckCircle className="w-4 h-4 text-emerald-400" /></div>
-                      <span className="line-through opacity-50">Reserva de hotel en Madrid.</span>
-                      <strong className="text-emerald-400 text-sm ml-2 bg-emerald-900/30 px-2 py-0.5 rounded border border-emerald-500/20">✔️ Resuelto por Dani</strong>
+                      <div className="bg-cyan-500/20 p-1 rounded-full"><Clock className="w-4 h-4 text-cyan-400" /></div>
+                      <span>Reserva de hotel en Madrid.</span>
+                      <strong className="text-cyan-400 text-sm ml-2 bg-cyan-900/30 px-2 py-0.5 rounded border border-cyan-500/20">Acción Sorany</strong>
                     </li>
                     <li className="flex items-center gap-2 text-slate-300"><div className="w-2 h-2 rounded-full bg-cyan-400 flex-shrink-0"></div> Planificar compras locales (adaptador enchufe redondo europeo).</li>
                   </ul>
@@ -248,21 +261,32 @@ const App = () => {
                 <div className="border-l-4 border-cyan-500/50 pl-6 relative">
                   <div className="absolute -left-2.5 top-1 bg-slate-900 border-2 border-cyan-500 w-4 h-4 rounded-full"></div>
                   <h4 className="font-extrabold text-slate-100 text-2xl mb-1">Tramo 1: Pereira (PEI) ➔ Bogotá (BOG)</h4>
-                  <p className="text-cyan-400 font-bold text-base mb-4 tracking-wide">Jueves, 7 de mayo de 2026 (Avianca AV9443)</p>
+                  <p className="text-cyan-400 font-bold text-base mb-4 tracking-wide">Jueves, 7 de mayo de 2026 · Avianca AV9443 · Localizador: ATQINS</p>
                   
                   <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-2xl flex flex-col md:flex-row gap-8 items-center">
                      <div className="flex-1">
                        <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-cyan-500 rotate-45"/> Despegue PEI</p>
-                       <p className="text-3xl font-bold text-slate-100">06:35 AM <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
+                       <p className="text-3xl font-bold text-slate-100">06:35 <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
                      </div>
                      <div className="flex-1">
                        <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-cyan-500 md:rotate-90"/> Aterrizaje BOG</p>
-                       <p className="text-3xl font-bold text-slate-100">07:30 AM <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
+                       <p className="text-3xl font-bold text-slate-100">07:30 <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
                      </div>
                   </div>
-                  <div className="mt-4 bg-amber-950/20 p-4 rounded-xl border border-amber-500/20 inline-flex items-center gap-3">
-                     <AlertTriangle className="w-5 h-5 text-amber-500" />
-                     <p className="text-amber-200 text-sm">Regla de oro de aeropuertos: Debes estar en el Aeropuerto Matecaña a las <strong className="text-amber-400 text-base">04:30 AM</strong>.</p>
+                  <div className="mt-4 grid sm:grid-cols-3 gap-3">
+                    <div className="bg-cyan-950/30 p-3 rounded-xl border border-cyan-500/20 flex items-center gap-2">
+                      <span className="text-cyan-400 font-bold text-sm">🪑 Asiento</span>
+                      <span className="text-slate-100 font-extrabold text-lg">17K</span>
+                      <span className="text-slate-400 text-xs">Grupo E</span>
+                    </div>
+                    <div className="bg-amber-950/20 p-3 rounded-xl border border-amber-500/20 flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4 text-amber-500 flex-shrink-0" />
+                      <span className="text-amber-200 text-sm">Presentarse en sala: <strong className="text-amber-400">05:35</strong></span>
+                    </div>
+                    <div className="bg-emerald-950/20 p-3 rounded-xl border border-emerald-500/20 flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                      <span className="text-emerald-200 text-sm">Bodega: <strong>1×23kg</strong> incluida</span>
+                    </div>
                   </div>
                 </div>
 
@@ -274,19 +298,38 @@ const App = () => {
                   <div className="border-l-4 border-purple-500/50 pl-6 relative">
                     <div className="absolute -left-2.5 top-1 bg-slate-900 border-2 border-purple-500 w-4 h-4 rounded-full"></div>
                     <h4 className="font-extrabold text-slate-100 text-2xl mb-1">Tramo 2: Bogotá (BOG) ➔ Madrid (MAD)</h4>
-                    <p className="text-purple-400 font-bold text-base mb-4 tracking-wide">Vuelo Internacional (Air Europa)</p>
+                    <p className="text-purple-400 font-bold text-base mb-4 tracking-wide">Air Europa UX 194 · Boeing 787-8 · Localizador: CB5ES3</p>
+
+                    <div className="mb-4 flex items-center gap-3 bg-emerald-900/30 border border-emerald-500/40 px-5 py-3 rounded-xl">
+                      <CheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                      <span className="text-emerald-200 font-bold text-base">✈️ CHECK-IN REALIZADO · Sello <span className="text-emerald-300 bg-emerald-900/50 px-2 py-0.5 rounded border border-emerald-500/30">SKYCLEARED</span> — Ve directo a la puerta de embarque</span>
+                    </div>
                     
                     <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-2xl space-y-6">
                        <div className="flex flex-col md:flex-row gap-8 border-b border-slate-700/50 pb-6">
                          <div className="flex-1">
                            <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-purple-500 rotate-45"/> Despegue BOG</p>
-                           <p className="text-3xl font-bold text-slate-100">08:15 PM <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
-                           <p className="text-sm text-slate-500 mt-2">Jueves, 7 de mayo (20:15)</p>
+                           <p className="text-3xl font-bold text-slate-100">20:15 <span className="text-base font-normal text-slate-400 bg-slate-800 px-2 py-1 rounded ml-2">Hora COL 🇨🇴</span></p>
+                           <p className="text-sm text-slate-500 mt-2">Jueves, 7 de mayo · El Dorado T1</p>
                          </div>
                          <div className="flex-1">
                            <p className="text-sm text-slate-500 font-bold uppercase mb-1 flex items-center gap-2"><Plane className="w-4 h-4 text-amber-500 md:rotate-90"/> Aterrizaje Barajas (MAD)</p>
-                           <p className="text-3xl font-bold text-slate-100">01:15 PM <span className="text-base font-normal text-amber-500 bg-amber-950/50 border border-amber-500/20 px-2 py-1 rounded ml-2">Hora MAD 🇪🇸</span></p>
-                           <p className="text-sm text-slate-500 mt-2">Viernes, 8 de mayo (13:15)</p>
+                           <p className="text-3xl font-bold text-slate-100">13:00 <span className="text-base font-normal text-amber-500 bg-amber-950/50 border border-amber-500/20 px-2 py-1 rounded ml-2">Hora MAD 🇪🇸</span></p>
+                           <p className="text-sm text-slate-500 mt-2">Viernes, 8 de mayo · Adolfo Suárez T1</p>
+                         </div>
+                       </div>
+                       <div className="grid sm:grid-cols-3 gap-3">
+                         <div className="bg-cyan-950/30 p-3 rounded-xl border border-cyan-500/20 flex items-center gap-2">
+                           <span className="text-cyan-400 font-bold text-sm">🪑 Asiento</span>
+                           <span className="text-slate-100 font-extrabold text-lg">29A</span>
+                           <span className="text-slate-400 text-xs">Zona 4</span>
+                         </div>
+                         <div className="bg-amber-950/20 p-3 rounded-xl border border-amber-500/20 flex items-center gap-2">
+                           <Clock className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                           <span className="text-amber-200 text-sm">Embarque: <strong className="text-amber-400">19:15</strong> máximo</span>
+                         </div>
+                         <div className="bg-purple-950/20 p-3 rounded-xl border border-purple-500/20 flex items-center gap-2">
+                           <span className="text-purple-300 text-sm">9h 45min · Sin escalas</span>
                          </div>
                        </div>
                        <div className="bg-purple-900/20 p-5 rounded-xl border border-purple-500/20 flex gap-4 items-start">
@@ -294,13 +337,12 @@ const App = () => {
                          <div>
                            <p className="text-base text-purple-300 font-bold mb-2">Tu familia en Colombia (Cero Ansiedad):</p>
                            <p className="text-base text-slate-300 leading-relaxed text-justify">
-                             Aterrizarás a la gloriosa hora de las <strong>01:15 PM</strong> (hora de España). ¡Pero tranquila! En ese instante exacto, en Aguadas-Caldas son apenas las <strong className="text-cyan-300 bg-cyan-900/30 px-2 py-1 rounded">06:15 AM</strong>.
-                             <br/><br/><strong className="text-purple-400">La regla:</strong> Tu familia apenas se estará levantando y preparando café, así que si durante tus trámites de migración no contestas rápido, diles con anticipación que para ellos allá todavía es de madrugada y no tienen por qué preocuparse.
+                             Aterrizarás a las <strong>13:00</strong> (hora de España). ¡Pero tranquila! En ese instante exacto, en Aguadas-Caldas son apenas las <strong className="text-cyan-300 bg-cyan-900/30 px-2 py-1 rounded">06:00 AM</strong>.
+                             <br/><br/><strong className="text-purple-400">La regla:</strong> Tu familia apenas se estará levantando y preparando café, así que si durante tus trámites de migración no contestas rápido, diles con anticipación que para ellos todavía es de madrugada y no tienen por qué preocuparse.
                            </p>
                          </div>
                        </div>
                     </div>
-                  </div>
               </div>
             </Card>
 

@@ -1,6 +1,35 @@
 # Changelog - SoranyProyect (Ruta Migratoria)
 
-## [30-04-2026] - Investigación Logística: Seguro Schengen y Reserva Hotel (v2.3)
+## [06-05-2026] - Día de Check-in y Centralización Documental (v2.5)
+
+### ✅ Completado hoy
+- **Check-in AV9443 (PEI→BOG):** Realizado en Avianca. Asiento **17K**, Grupo **E**, hora de sala 05:35. Equipaje 1×23kg incluido.
+- **Check-in UX194 (BOG→MAD):** Realizado en Air Europa. Asiento **29A**, Zona 4, hora embarque 19:15. Sello **SKYCLEARED** ✅ — puede ir directo a la puerta.
+- **EMD Asiento 29A:** Pagado COP 79,849 con Visa ····4799. Documento `996 4566003616`. No reembolsable.
+- **Reserva de hotel:** PDF de confirmación recibido y guardado en el proyecto.
+- **Datos pasaporte completados:** Nº **BE310574**, expedición 11-jun-2024, vencimiento 11-jun-2034, Autoridad: G. Caldas.
+- **Teléfono Sorany guardado:** +57 320 6549254.
+- **Web actualizada (v2.5):** Sección de vuelos con asientos reales, SKYCLEARED, horas de embarque y sala.
+
+### ⚠️ Pendiente crítico
+- **Corrección fecha IATI:** La póliza tiene noviembre en lugar de **8 de octubre de 1994**. Llamar al +57 601 770 2946 a las 7:00 AM (COL) del 7 de mayo **antes del vuelo**.
+
+---
+
+## [05-05-2026] - Compra de Seguro y Guía de Acción Directa (v2.4)
+
+### Añadido
+- **Guía de Acción Rápida (Web):** Integración de un módulo paso a paso en `App.jsx` para que Sorany realice la compra del seguro y la reserva de hotel directamente.
+- **Instrucciones de Compra:** Creación de `instrucciones_compra_sorany.md` con los pasos detallados y enlaces.
+- **Registro de Datos Reales:** Centralización de datos del voucher de seguro (`130359095120`) y pasaporte (`1055835949`) en los informes.
+
+### Modificado
+- **`App.jsx`:** Rediseño del componente de Seguro Schengen para incluir la guía "Zero Friction" y actualización del checklist a "Acción Sorany".
+- **`informe_vuelos_sorany.md`:** Incorporación de los correos electrónicos de contacto y datos identificativos extraídos del voucher.
+
+### Incidencias
+- **Error en Fecha de Nacimiento:** Se detectó un error en la póliza (Noviembre vs Octubre). Se ha redactado el correo de corrección y se ha proporcionado el contacto de soporte telefónico de Bogotá para gestión inmediata.
+
 
 ### Añadido
 - **Nueva tarjeta "Seguro Schengen" (Paso 1):** Módulo completo con los requisitos legales mínimos (30.000€ de cobertura, repatriación, sin franquicia) y comparativa de las 3 mejores opciones para viajeros colombianos: IATI Seguros (recomendado), AXA Schengen (plan Basic/Essential) y Allianz Assistance.
