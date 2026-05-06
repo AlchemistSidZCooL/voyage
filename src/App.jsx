@@ -207,13 +207,7 @@ const App = () => {
                   </div>
                 </div>
 
-                <div className="bg-slate-900/80 p-4 rounded-xl border border-white/5 flex gap-3 items-start">
-                  <div className="text-2xl mt-0.5">💶</div>
-                  <div>
-                    <h5 className="font-bold text-slate-100 text-base">Prueba de Medios Económicos</h5>
-                    <p className="text-slate-400 text-sm mt-1">Imprime un extracto bancario de tu cuenta o muestra tu tarjeta de crédito internacional. Si llevas efectivo (los 1.000€), tenlos listos de forma discreta.</p>
-                  </div>
-                </div>
+
               </div>
 
               <div className="mt-5 bg-amber-950/30 p-4 rounded-xl border border-amber-500/30 flex items-center gap-3">
