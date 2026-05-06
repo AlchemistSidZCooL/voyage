@@ -1,15 +1,18 @@
 # Changelog - SoranyProyect (Ruta Migratoria)
 
-## [06-05-2026] - Día de Check-in y Centralización Documental (v2.5)
+## [06-05-2026] - Día de Check-in, Horas Duales y Carpeta de Impresos (v2.6)
 
 ### ✅ Completado hoy
-- **Check-in AV9443 (PEI→BOG):** Realizado en Avianca. Asiento **17K**, Grupo **E**, hora de sala 05:35. Equipaje 1×23kg incluido.
-- **Check-in UX194 (BOG→MAD):** Realizado en Air Europa. Asiento **29A**, Zona 4, hora embarque 19:15. Sello **SKYCLEARED** ✅ — puede ir directo a la puerta.
-- **EMD Asiento 29A:** Pagado COP 79,849 con Visa ····4799. Documento `996 4566003616`. No reembolsable.
+- **Reloj Dual Sincronizado (COL/ESP) 🕒:** Añadidas las dos zonas horarias en todos los hitos y eventos de la web (transporte terrestre, despegue en Pereira, escala en Bogotá, despegue a Madrid, hora de embarque máximo, aterrizaje en Barajas y vuelo de retorno) para que Dani y Sorany se sincronicen perfectamente.
+- **Nueva Tarjeta de Carpeta Física 📋:** Diseñada la sección dedicada a los documentos que Sorany debe llevar impresos obligatoriamente en su bolso de mano para total tranquilidad ante migración (Pasabordos, Seguro Schengen y Reserva de Hotel).
+- **Control de Fricción y Ansiedad 🛡️:** Se eliminó el requerimiento de Prueba de Medios Económicos de la lista de impresos de la web para evitar agobios con el cupo de crédito, manteniendo la lista limpia, fácil y enfocada.
+- **Check-in AV9443 (PEI→BOG):** Realizado en Avianca. Silla **17K**, Grupo **E**, sala 05:35 COL / 12:35 MAD. Equipaje 1×23kg incluido.
+- **Check-in UX194 (BOG→MAD):** Realizado en Air Europa. Silla **29A**, Zona 4, embarque 19:15 COL / 02:15 MAD (Vie 8). Sello **SKYCLEARED** ✅ — puede ir directo a la puerta.
+- **EMD Silla 29A:** Pagado COP 79,849 con Visa ····4799. Documento `996 4566003616`. No reembolsable.
 - **Reserva de hotel:** PDF de confirmación recibido y guardado en el proyecto.
 - **Datos pasaporte completados:** Nº **BE310574**, expedición 11-jun-2024, vencimiento 11-jun-2034, Autoridad: G. Caldas.
 - **Teléfono Sorany guardado:** +57 320 6549254.
-- **Web actualizada (v2.5):** Sección de vuelos con asientos reales, SKYCLEARED, horas de embarque y sala.
+- **Web actualizada (v2.6):** Sillas, SKYCLEARED, reloj dual en todos los tramos, carpeta física optimizada y subida de producción.
 
 ### ⚠️ Pendiente crítico
 - **Corrección fecha IATI:** La póliza tiene noviembre en lugar de **8 de octubre de 1994**. Llamar al +57 601 770 2946 a las 7:00 AM (COL) del 7 de mayo **antes del vuelo**.
