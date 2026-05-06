@@ -175,6 +175,53 @@ const App = () => {
               </div>
             </Card>
 
+            <Card title="📋 Carpeta Física: Documentos que DEBES llevar Impresos" icon={<FileText className="w-6 h-6 text-cyan-400" />} type="info" badge="OBLIGATORIO">
+              <div className="mb-5 bg-cyan-950/40 p-5 rounded-2xl border border-cyan-500/30">
+                <p className="text-cyan-200 text-base leading-relaxed">
+                  <strong className="text-white">Regla de oro de migración:</strong> Aunque lleves todo en el celular, <strong className="text-white">DEBES llevar estos papeles impresos físicamente en tu mochila de mano</strong>. Si te quedas sin batería, sin señal o el oficial te los pide, los sacas de tu carpeta en 3 segundos. ¡Eso demuestra orden y seguridad absoluta!
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-slate-900/80 p-4 rounded-xl border border-white/5 flex gap-3 items-start">
+                  <div className="text-2xl mt-0.5">✈️</div>
+                  <div>
+                    <h5 className="font-bold text-slate-100 text-base">Pasabordos / Tiquetes de Avión</h5>
+                    <p className="text-slate-400 text-sm mt-1">Imprime tanto el tiquete de Pereira ➔ Bogotá (Avianca) como el de Bogotá ➔ Madrid (Air Europa). Y muy importante: ¡lleva también impreso el de regreso (Madrid ➔ Bogotá)!</p>
+                  </div>
+                </div>
+
+                <div className="bg-slate-900/80 p-4 rounded-xl border border-white/5 flex gap-3 items-start">
+                  <div className="text-2xl mt-0.5">🛡️</div>
+                  <div>
+                    <h5 className="font-bold text-slate-100 text-base">Póliza del Seguro de Viaje Schengen</h5>
+                    <p className="text-slate-400 text-sm mt-1">La hoja de IATI Seguros donde sale tu nombre completo, fechas de cobertura y la certificación de que cubre el mínimo de 30.000€ exigido.</p>
+                  </div>
+                </div>
+
+                <div className="bg-slate-900/80 p-4 rounded-xl border border-white/5 flex gap-3 items-start">
+                  <div className="text-2xl mt-0.5">🏨</div>
+                  <div>
+                    <h5 className="font-bold text-slate-100 text-base">Confirmación de Reserva de Hotel</h5>
+                    <p className="text-slate-400 text-sm mt-1">La hoja de confirmación del alojamiento en Madrid (del 8 al 15 de mayo). Es el documento principal que te pedirá el oficial para justificar dónde vas a dormir.</p>
+                  </div>
+                </div>
+
+                <div className="bg-slate-900/80 p-4 rounded-xl border border-white/5 flex gap-3 items-start">
+                  <div className="text-2xl mt-0.5">💶</div>
+                  <div>
+                    <h5 className="font-bold text-slate-100 text-base">Prueba de Medios Económicos</h5>
+                    <p className="text-slate-400 text-sm mt-1">Imprime un extracto bancario de tu cuenta o muestra tu tarjeta de crédito internacional. Si llevas efectivo (los 1.000€), tenlos listos de forma discreta.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-5 bg-amber-950/30 p-4 rounded-xl border border-amber-500/30 flex items-center gap-3">
+                <AlertTriangle className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <p className="text-amber-200 text-sm"><strong>Consejo de seguridad:</strong> Guarda todos estos folios en una carpetica de plástico transparente y métela en tu bolso o mochila de mano (que vaya siempre contigo). ¡No la vayas a guardar en la maleta que metes arriba o facturas!</p>
+              </div>
+            </Card>
+
             <Card title="⏳ Checklist Definitivo (Semana de Vuelo)" icon={<Clock className="w-6 h-6 text-cyan-400" />} type="info">
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-cyan-950/40 p-5 rounded-xl border border-cyan-500/20">
