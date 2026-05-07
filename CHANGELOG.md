@@ -16,7 +16,7 @@
 
 ### ⚠️ Pendiente crítico
 - **Corrección fecha IATI:** La póliza tiene noviembre en lugar de **8 de octubre de 1994**. Llamar al +57 601 770 2946 a las 7:00 AM (COL) del 7 de mayo **antes del vuelo**.
-
+ 
 ---
 
 ## [05-05-2026] - Compra de Seguro y Guía de Acción Directa (v2.4)
