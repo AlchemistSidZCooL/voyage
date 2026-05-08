@@ -1,5 +1,14 @@
 # Changelog - SoranyProyect (Ruta Migratoria)
 
+## [08-05-2026] - Rediseño Visual del Equipaje de Cabina y Mochila (v2.8)
+
+### ✅ Completado hoy
+- **Diseño de Equipaje de Alta Fidelidad 🧳:** Implementado un renderizado CSS interactivo y premium de la maleta de cabina (10 KG) y la mochila personal, facilitando una comprensión visual inmediata del peso permitido y de las dimensiones del equipaje de mano.
+- **Sincronización SKYCLEARED ✈️:** Vinculación directa entre el equipaje ligero (10 KG) y la ventaja de no tener que facturar maletas en bodega, reduciendo la ansiedad pre-vuelo.
+- **Estructuración Limpia de Contenidos:** Distribución del equipaje en "Mochila Personal" (bajo el asiento delantero, centrada en documentos impresos y dinero) y "Maleta de Cabina de 10 KG" (compartimento superior, ropa con método rollito y líquidos <100ml) para una asimilación cognitiva cero fricción.
+
+---
+
 ## [06-05-2026] - Día de Check-in, Horas Duales y Carpeta de Impresos (v2.6)
 
 ### ✅ Completado hoy

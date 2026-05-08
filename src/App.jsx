@@ -246,32 +246,111 @@ const App = () => {
               </div>
             </Card>
 
-            <Card title="🧳 Estrategia de Equipaje (Tour 8 Días)" icon={<Briefcase className="w-6 h-6 text-emerald-400" />} type="default">
-               <div className="mb-5 text-slate-300 leading-relaxed text-lg bg-slate-900/50 p-4 rounded-xl border border-white/5">
-                  <strong className="text-cyan-400">¡Noticia Excelente!</strong> Tu excursión real documentada en España dura exactamente <strong>1 semana (del 8 al 15)</strong>. El clima es un calor agradable. ¡No necesitas llevar la casa entera! 
-                  <br/><strong className="text-emerald-400 text-xl block mt-2">💎 Las armas: Solo 1 Maleta de Cabina (10 KG) + 1 Mochila Personal.</strong>
+            <Card title="🧳 Estrategia de Equipaje: Maleta de Cabina (10 KG)" icon={<Briefcase className="w-6 h-6 text-emerald-400" />} type="success">
+               <div className="mb-8 text-slate-300 leading-relaxed text-lg bg-slate-900/50 p-6 rounded-2xl border border-white/5 flex flex-col lg:flex-row gap-6 items-center">
+                  <div className="flex-1">
+                    <strong className="text-cyan-400 text-xl block mb-2">🚀 ¡Viaja Ligera, Viaja Libre!</strong>
+                    <p className="text-slate-300 leading-relaxed">
+                      Tu excursión real documentada en España dura exactamente <strong className="text-white">1 semana (del 8 al 15)</strong>. El clima de primavera en Madrid es cálido y sumamente agradable. 
+                      Al llevar <strong className="text-emerald-400">únicamente equipaje de cabina (10 KG)</strong>, desbloqueas el <strong className="text-emerald-300">Sello SKYCLEARED</strong> para evitar facturación y largas filas. ¡Todo son ventajas!
+                    </p>
+                  </div>
+                  <div className="flex gap-6 items-end justify-center bg-slate-950/60 p-6 rounded-3xl border border-cyan-500/20 shadow-[0_0_25px_rgba(34,211,238,0.05)] w-full lg:w-auto">
+                    {/* Visual de Mochila */}
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="relative w-20 h-24 bg-gradient-to-b from-purple-500/90 to-indigo-600/90 rounded-2xl shadow-lg shadow-purple-500/10 flex flex-col items-center justify-between p-3 border border-purple-300/20 group hover:border-purple-400/40 transition-all duration-300">
+                        {/* Backpack Loop */}
+                        <div className="absolute -top-2 w-7 h-3 border-t-4 border-x-4 border-slate-400 rounded-t-md"></div>
+                        {/* Backpack pocket */}
+                        <div className="w-full h-8 bg-purple-950/50 rounded-lg border border-purple-400/20 flex items-center justify-center text-[10px] font-bold text-purple-300/80">DOCS</div>
+                        <span className="text-[10px] font-bold text-white tracking-widest uppercase">MOCHILA</span>
+                        <div className="w-full h-1 bg-purple-400/30 rounded"></div>
+                      </div>
+                      <span className="text-xs font-semibold text-purple-400">Bajo el Asiento</span>
+                    </div>
+
+                    {/* Visual de Maleta */}
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="relative w-28 h-36 bg-gradient-to-b from-cyan-500/90 to-blue-600/90 rounded-3xl shadow-xl shadow-cyan-500/20 flex flex-col items-center justify-between p-4 border border-cyan-300/30 group hover:border-cyan-400/40 transition-all duration-300 transform hover:scale-105">
+                        {/* Suitcase Handle */}
+                        <div className="absolute -top-5 w-12 h-5 border-t-4 border-x-4 border-slate-400 rounded-t-lg flex justify-center">
+                          <div className="w-8 h-1 bg-slate-400 rounded-full mt-1"></div>
+                        </div>
+                        {/* Suitcase Wheels */}
+                        <div className="absolute -bottom-2.5 flex justify-between w-20 px-2">
+                          <div className="w-4 h-4 bg-slate-900 rounded-full border-2 border-slate-600"></div>
+                          <div className="w-4 h-4 bg-slate-900 rounded-full border-2 border-slate-600"></div>
+                        </div>
+                        {/* Suitcase horizontal stripes */}
+                        <div className="w-full h-1.5 bg-cyan-300/40 rounded-full"></div>
+                        
+                        {/* Weight Display Badge */}
+                        <div className="bg-slate-950/80 px-3 py-1.5 rounded-2xl border border-cyan-400/30 text-center flex flex-col items-center justify-center min-w-[70px] shadow-inner shadow-cyan-500/10">
+                          <span className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 leading-none">10</span>
+                          <span className="text-[9px] font-black text-cyan-300 tracking-widest mt-0.5 leading-none">KILOS</span>
+                        </div>
+                        
+                        <div className="w-full h-1.5 bg-cyan-300/40 rounded-full"></div>
+                      </div>
+                      <span className="text-xs font-bold text-cyan-400 flex items-center gap-1">Cabina <CheckCircle className="w-3.5 h-3.5 text-emerald-400"/></span>
+                    </div>
+                  </div>
                </div>
                
                <div className="grid md:grid-cols-2 gap-6 mt-6">
-                 <div className="bg-slate-900 border border-slate-700/50 p-6 rounded-2xl hover:border-purple-500/30 transition-colors">
-                   <h4 className="font-bold text-slate-100 flex items-center gap-2 mb-4 text-lg"><Backpack className="w-5 h-5 text-purple-400"/> Tu Mochila Personal</h4>
-                   <p className="text-sm text-slate-400 mb-4 bg-slate-950 p-2 rounded-lg">(Va debajo del asiento). Es intocable, tu resguardo.</p>
+                 <div className="bg-slate-900 border border-slate-700/30 p-6 rounded-3xl hover:border-purple-500/20 transition-all shadow-md hover:bg-slate-900/80">
+                   <h4 className="font-bold text-slate-100 flex items-center gap-3 mb-4 text-lg">
+                     <div className="bg-purple-500/10 p-2 rounded-xl border border-purple-500/20"><Backpack className="w-5 h-5 text-purple-400"/></div>
+                     Tu Mochila Personal (Bolso de Mano)
+                   </h4>
+                   <p className="text-sm text-purple-300 mb-4 bg-purple-950/20 border border-purple-500/10 px-3 py-1.5 rounded-xl font-medium flex items-center gap-2">
+                     <Info className="w-4 h-4"/> Va debajo de tu asiento delantero. Siempre contigo.
+                   </p>
                    <ul className="text-base text-slate-300 space-y-3">
-                     <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-purple-400"></div> Pasaporte original (+ Copia a color).</li>
-                     <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-purple-400"></div> Reserva de Hotel e Itinerario impreso.</li>
-                     <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-purple-400"></div> Dinero en Efectivo (A la mano para migración).</li>
-                     <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-purple-400"></div> Cargador del móvil y cepillo de dientes.</li>
+                     <li className="flex items-center gap-3">
+                       <div className="w-1.5 h-1.5 rounded-full bg-purple-400 flex-shrink-0"></div>
+                       <span><strong>Pasaporte original</strong> (+ Copia impresa a color).</span>
+                     </li>
+                     <li className="flex items-center gap-3">
+                       <div className="w-1.5 h-1.5 rounded-full bg-purple-400 flex-shrink-0"></div>
+                       <span><strong>Carpeta de Migración</strong> con los folios impresos.</span>
+                     </li>
+                     <li className="flex items-center gap-3">
+                       <div className="w-1.5 h-1.5 rounded-full bg-purple-400 flex-shrink-0"></div>
+                       <span><strong>Dinero en Efectivo</strong> (Fácil acceso si te lo piden).</span>
+                     </li>
+                     <li className="flex items-center gap-3">
+                       <div className="w-1.5 h-1.5 rounded-full bg-purple-400 flex-shrink-0"></div>
+                       <span>Cargador de móvil, auriculares y cepillo de dientes.</span>
+                     </li>
                    </ul>
                  </div>
                  
-                 <div className="bg-slate-900 border border-slate-700/50 p-6 rounded-2xl hover:border-cyan-500/30 transition-colors">
-                   <h4 className="font-bold text-slate-100 flex items-center gap-2 mb-4 text-lg"><Briefcase className="w-5 h-5 text-cyan-400"/> Maleta de Cabina (10 Kg)</h4>
-                   <p className="text-sm text-slate-400 mb-4 bg-slate-950 p-2 rounded-lg">(Para 1 mísera semana). Evita las ruedas de bodega:</p>
+                 <div className="bg-slate-900 border border-slate-700/30 p-6 rounded-3xl hover:border-cyan-500/20 transition-all shadow-md hover:bg-slate-900/80">
+                   <h4 className="font-bold text-slate-100 flex items-center gap-3 mb-4 text-lg">
+                     <div className="bg-cyan-500/10 p-2 rounded-xl border border-cyan-500/20"><Briefcase className="w-5 h-5 text-cyan-400"/></div>
+                     Maleta de Cabina de 10 KG
+                   </h4>
+                   <p className="text-sm text-cyan-300 mb-4 bg-cyan-950/20 border border-cyan-500/10 px-3 py-1.5 rounded-xl font-medium flex items-center gap-2">
+                     <Info className="w-4 h-4"/> Va en los compartimentos superiores. No se factura en bodega.
+                   </p>
                    <ul className="text-base text-slate-300 space-y-3">
-                     <li className="flex items-start gap-2">👕 <span><strong>Método Rollito:</strong> Enrollar ropa ahorra un montonazo.</span></li>
-                     <li className="flex items-start gap-2">👖 <span><strong>Básicos minimalistas:</strong> Solo 2-3 pantalones, blusas ligeras. Nada grande. Lencería 8 días.</span></li>
-                     <li className="flex items-start gap-2">🧥 <span><strong>Abrigo:</strong> Solo 1 y llevalo <em>puesto</em> como prenda de vestir, no estorbes la maleta.</span></li>
-                     <li className="flex items-start gap-2">🧴 <span><strong>Líquidos:</strong> Bolsa Ziploc botellitas mini de menos de 100ml.</span></li>
+                     <li className="flex items-start gap-3">
+                       <span className="text-lg leading-none mt-0.5">👕</span>
+                       <span><strong>Método Rollito:</strong> Enrollar cada prenda maximiza espacio y reduce arrugas.</span>
+                     </li>
+                     <li className="flex items-start gap-3">
+                       <span className="text-lg leading-none mt-0.5">👖</span>
+                       <span><strong>Básicos minimalistas:</strong> 2-3 pantalones cómodos, blusas/camisetas ligeras.</span>
+                     </li>
+                     <li className="flex items-start gap-3">
+                       <span className="text-lg leading-none mt-0.5">🧥</span>
+                       <span><strong>Abrigo/Chaqueta:</strong> Lleva el más pesado puesto contigo en el avión.</span>
+                     </li>
+                     <li className="flex items-start gap-3">
+                       <span className="text-lg leading-none mt-0.5">🧴</span>
+                       <span><strong>Líquidos (&lt;100ml):</strong> En bolsa transparente con cierre (Ziploc).</span>
+                     </li>
                    </ul>
                  </div>
                </div>
