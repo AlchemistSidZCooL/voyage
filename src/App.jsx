@@ -633,9 +633,143 @@ const App = () => {
                      </div>
                    </li>
                  </ul>
-              </Card>
-            </div>
-          </SectionWrapper>
+               </Card>
+             </div>
+
+             <div className="mt-10">
+               <Card title="🗺️ Protocolo de Reencuentro en la Terminal 1 (Paso a Paso)" icon={<Users className="w-7 h-7 text-cyan-400" />} type="info">
+                 <div className="mb-6 bg-cyan-950/40 p-5 rounded-2xl border border-cyan-500/30">
+                   <p className="text-cyan-200 text-base leading-relaxed text-center font-medium">
+                     Este es el plan de acción sincronizado para que Dani y Sorany se encuentren en el hall público de la **Terminal 1 de Barajas (MAD)** sin retrasos, confusiones ni agobios.
+                   </p>
+                 </div>
+
+                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                   {/* DANI */}
+                   <div className="bg-slate-900 border border-slate-700/30 p-6 rounded-3xl relative hover:border-cyan-500/20 transition-all shadow-md">
+                     <div className="absolute top-4 right-4 bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest border border-cyan-500/20">Dani</div>
+                     <h4 className="font-bold text-slate-100 flex items-center gap-3 mb-6 text-xl border-b border-white/5 pb-4">
+                       <div className="bg-cyan-500/10 p-2 rounded-xl text-cyan-400"><UserCheck className="w-5 h-5"/></div>
+                       🙋‍♂️ Tu Ruta de Recogida
+                     </h4>
+                     
+                     <div className="space-y-6 relative before:absolute before:left-[19px] before:top-2 before:bottom-2 before:w-0.5 before:bg-cyan-500/20">
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-cyan-500 text-cyan-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(34,211,238,0.3)]">1</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">12:15 PM · Salida de Casa 🚶‍♂️</strong>
+                           <span className="text-slate-400 text-sm block">Sal de Calle de Andrés Mellado 31 y camina hacia el **Metro de Moncloa** (~6 minutos a pie).</span>
+                         </div>
+                       </div>
+
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-cyan-500 text-cyan-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(34,211,238,0.3)]">2</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">12:21 PM · Línea 6 (Gris) 🚇</strong>
+                           <span className="text-slate-400 text-sm block">Súbete al metro dirección *Cuatro Caminos / Nuevos Ministerios*. Viaja **5 paradas** y bájate en **Nuevos Ministerios** (~10 mins).</span>
+                         </div>
+                       </div>
+
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-cyan-500 text-cyan-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(34,211,238,0.3)]">3</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">12:35 PM · Transbordo Línea 8 🏃‍♂️</strong>
+                           <span className="text-slate-400 text-sm block">Sigue los carteles de color rosa de la **Línea 8**. Camina el túnel de conexión y toma el tren dirección *Aeropuerto T4* (~6 mins).</span>
+                         </div>
+                       </div>
+
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-cyan-500 text-cyan-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(34,211,238,0.3)]">4</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">12:55 PM · Llegada a Estación MAD 🚇</strong>
+                           <span className="text-slate-400 text-sm block">Viaja **5 paradas** y bájate en **Aeropuerto T1-T2-T3** (~15 mins). No olvides validar con abono o pagar el suplemento.</span>
+                         </div>
+                       </div>
+
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-cyan-500 text-cyan-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(34,211,238,0.3)]">5</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">13:05 PM · Conexión Interna a la T1 🚶‍♂️</strong>
+                           <span className="text-slate-400 text-sm block">Sigue los carteles hacia la **Terminal T1 Llegadas**. Pasarás por un pasillo interior con cintas mecánicas (~8-10 mins).</span>
+                         </div>
+                       </div>
+
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-cyan-500 text-cyan-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(34,211,238,0.3)]">6</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">13:15 PM · Espera Cómoda en T1 Llegadas 📍</strong>
+                           <span className="text-slate-400 text-sm block">Párate en el vestíbulo principal de llegadas internacionales de la **Terminal 1**. Busca un café cerca, quédate tranquilo y mantente atento a la salida de pasajeros.</span>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   {/* SORANY */}
+                   <div className="bg-slate-900 border border-slate-700/30 p-6 rounded-3xl relative hover:border-purple-500/20 transition-all shadow-md">
+                     <div className="absolute top-4 right-4 bg-purple-500/10 text-purple-400 px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest border border-purple-500/20">Sorany</div>
+                     <h4 className="font-bold text-slate-100 flex items-center gap-3 mb-6 text-xl border-b border-white/5 pb-4">
+                       <div className="bg-purple-500/10 p-2 rounded-xl text-purple-400"><Heart className="w-5 h-5"/></div>
+                       ✈️ Tu Ruta de Salida en Barajas
+                     </h4>
+
+                     <div className="space-y-6 relative before:absolute before:left-[19px] before:top-2 before:bottom-2 before:w-0.5 before:bg-purple-500/20">
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-purple-500 text-purple-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(168,85,247,0.3)]">1</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">13:00 PM · Aterrizaje y Desembarque 🛬</strong>
+                           <span className="text-slate-400 text-sm block">El avión aterriza en la T1. Toma tu mochila personal y tu maleta de cabina de los compartimentos superiores.</span>
+                         </div>
+                       </div>
+
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-purple-500 text-purple-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(168,85,247,0.3)]">2</div>
+                         <div className="bg-purple-950/20 p-4 rounded-2xl border border-purple-500/20 w-full">
+                           <strong className="text-purple-300 block text-base font-extrabold mb-2">🔍 El Dilema de la Maleta de 10 KG</strong>
+                           <p className="text-slate-300 text-sm leading-relaxed mb-3">
+                             ¿Dónde viaja tu maleta de cabina de 10 KG al final? Esto define tu ruta:
+                           </p>
+                           <div className="space-y-2 text-xs">
+                             <div className="bg-emerald-950/30 p-2.5 rounded-xl border border-emerald-500/20">
+                               <strong className="text-emerald-400 block mb-1">Caso A: Viajó en Cabina contigo (Normal)</strong>
+                               <span className="text-slate-300">¡Excelente! Sales con ella en la mano. **No vayas a las cintas de equipaje**. Camina directo al control de pasaportes.</span>
+                             </div>
+                             <div className="bg-amber-950/30 p-2.5 rounded-xl border border-amber-500/20">
+                               <strong className="text-amber-400 block mb-1">Caso B: Se la bajaron a Bodega en la puerta (Saturación)</strong>
+                               <span className="text-slate-300">Si por espacio la bajaron a bodega en la puerta de Bogotá, te habrán dado una tirilla. Al desembarcar, **sigue los carteles de "Equipajes" de la T1**, busca la cinta del vuelo UX 194 y espérala antes de salir.</span>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-purple-500 text-purple-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(168,85,247,0.3)]">3</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">👮‍♂️ Control de Pasaportes / Inmigración</strong>
+                           <span className="text-slate-400 text-sm block">Sigue las señales hacia el control migratorio. Haz la fila de **"No Comunitarios / All Passports"**. Saca de tu mochila de mano la carpeta con tus papeles impresos y muéstralos tranquila.</span>
+                         </div>
+                       </div>
+
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-purple-500 text-purple-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(168,85,247,0.3)]">4</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">🟢 Aduana (Nada que Declarar)</strong>
+                           <span className="text-slate-400 text-sm block">Tras el control de pasaportes (y tras recoger la maleta si aplicaba el Caso B), sigue la salida cruzando por el pasillo verde de aduanas que dice *"Nada que declarar"*.</span>
+                         </div>
+                       </div>
+
+                       <div className="flex gap-4 items-start relative z-10">
+                         <div className="bg-slate-950 border-2 border-purple-500 text-purple-400 w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 shadow-[0_0_10px_rgba(168,85,247,0.3)]">5</div>
+                         <div>
+                           <strong className="text-slate-100 block text-base font-semibold mb-1">🚪 Cruzar las Puertas de Salida 📍</strong>
+                           <span className="text-slate-400 text-sm block">Cruza las puertas automáticas de cristal que dan al vestíbulo público de la T1. ¡Por fin libre! Dani estará allí mismo de pie esperándote para darte un abrazo inmenso.</span>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </Card>
+             </div>
+           </SectionWrapper>
         )}
 
         {activeTab === 'refugio' && (
