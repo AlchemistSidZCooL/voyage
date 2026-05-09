@@ -617,8 +617,8 @@ const App = () => {
                 <li className="flex gap-4 items-start">
                   <div className="bg-emerald-500/20 p-2 rounded-lg text-emerald-400 mt-0.5"><CheckCircle className="w-5 h-5"/></div>
                   <div>
-                    <strong className="text-slate-100 block mb-1">2. Demostración de Medios Económicos (Solucionado)</strong>
-                    <span className="text-slate-400">Se exige demostrar el 100% del IPREM (~600€/mes). Esto se resolverá a través de un servicio de préstamo de manutención que ofrece <strong>MigraEmpleo</strong>. Ellos depositan el dinero directamente en tu cuenta para que puedas demostrar tu solvencia económica oficial ante Extranjería sin complicaciones.</span>
+                    <strong className="text-slate-100 block mb-1">2. Demostración Económica (Dos Opciones a Evaluar)</strong>
+                    <span className="text-slate-400">Se exige demostrar el 100% del IPREM (~600€/mes). <strong>Opción A:</strong> El servicio de préstamo de MigraEmpleo (se debe solicitar explicación exacta de cómo lo estructuran legalmente ante Extranjería). <strong>Opción B:</strong> Respaldo económico de Dani mediante acta notarial.</span>
                   </div>
                 </li>
                 <li className="flex gap-4 items-start">
@@ -642,9 +642,16 @@ const App = () => {
               <h4 className="font-extrabold text-emerald-400 text-2xl mb-4 flex items-center gap-3">
                 <Users className="w-8 h-8" /> Contacto Inmediato: MigraEmpleo
               </h4>
-              <p className="text-emerald-100/90 text-lg leading-relaxed mb-6">
-                Para garantizar que no haya errores en el expediente y validar el centro de estudios, la acción inmediata es delegar la consulta en expertos vinculados a la Universidad Rey Juan Carlos.
+              <p className="text-emerald-100/90 text-lg leading-relaxed mb-3">
+                Para garantizar que no haya errores, tu <strong>acción inmediata</strong> es contactar a estos expertos (vinculados a la Univ. Rey Juan Carlos) y consultarles exactamente estos 4 puntos:
               </p>
+              
+              <ul className="list-disc pl-6 space-y-2 text-emerald-200/90 text-lg mb-8 font-medium">
+                <li>El proceso detallado de <strong>Estancia por Estudios</strong> estando ya como turista.</li>
+                <li>Los <strong>tiempos y plazos exactos</strong> que tienes disponibles para tramitarlo.</li>
+                <li>Validar que los centros de estudio ofrecidos estén <strong className="text-rose-300">oficialmente homologados</strong> (Comunidad de Madrid / SEPE).</li>
+                <li>Preguntar <strong>cómo estructuran legalmente el préstamo de manutención</strong> y qué documentación exacta entregan para evitar rechazos en Extranjería.</li>
+              </ul>
               
               <div className="bg-emerald-900/40 p-5 rounded-2xl border border-emerald-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
