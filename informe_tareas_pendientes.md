@@ -10,3 +10,4 @@
 - [x] Tarea 10: Definir Seguro Schengen y crear guía de compra (Sorany lo comprará directamente siguiendo instrucciones en la Web).
 - [x] Tarea 11: Reserva de hotel cancelable completada. PDF recibido y guardado en el proyecto.
 - [ ] Tarea 12: Recibir PDFs de Sorany para centralización y control migratorio.
+- [ ] Tarea 13: Contactar a MigraEmpleo (https://migraempleo.com/) para asesoramiento y gestión de trámites de estancia por estudios en España.

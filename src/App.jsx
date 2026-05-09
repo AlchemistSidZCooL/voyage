@@ -9,15 +9,15 @@ import {
 } from 'lucide-react';
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState('preparacion');
+  const [activeTab, setActiveTab] = useState('transicion');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const steps = [
-    { id: 'preparacion', title: '1. Previos en Colombia', icon: <FileText className="w-6 h-6" /> },
-    { id: 'frontera', title: '2. Vuelos y Maletas', icon: <Briefcase className="w-6 h-6" /> },
-    { id: 'transicion', title: '3. Legal y Finanzas', icon: <ShieldCheck className="w-6 h-6" /> },
-    { id: 'logistica', title: '4. Madrid', icon: <MapPin className="w-6 h-6" /> },
-    { id: 'refugio', title: '5. Espacio Seguro', icon: <Heart className="w-6 h-6" /> },
+    { id: 'transicion', title: '1. Tarea Actual: Legal y Finanzas', icon: <ShieldCheck className="w-6 h-6" /> },
+    { id: 'logistica', title: '2. Logística en Madrid', icon: <MapPin className="w-6 h-6" /> },
+    { id: 'refugio', title: '3. Espacio Seguro', icon: <Heart className="w-6 h-6" /> },
+    { id: 'preparacion', title: '✓ Previos en Colombia', icon: <CheckCircle className="w-6 h-6" />, archived: true },
+    { id: 'frontera', title: '✓ Vuelos y Maletas', icon: <CheckCircle className="w-6 h-6" />, archived: true },
   ];
 
   const SectionWrapper = ({ children, title }) => (
@@ -76,23 +76,52 @@ const App = () => {
           <p className="text-slate-400 text-sm mt-3 font-medium uppercase tracking-widest">Panel Logístico Sorany</p>
         </div>
         
-        <div className="mt-6 px-6 flex-1 space-y-2">
-          {steps.map((step) => (
-            <button
-              key={step.id}
-              onClick={() => { setActiveTab(step.id); setIsMenuOpen(false); }}
-              className={`w-full flex items-center gap-4 px-6 py-5 rounded-2xl text-base font-semibold transition-all duration-300 ${
-                activeTab === step.id 
-                  ? 'bg-cyan-500/10 border border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.15)] text-cyan-300 translate-x-2' 
-                  : 'text-slate-500 hover:bg-white/5 hover:text-slate-200 border border-transparent'
-              }`}
-            >
-              <div className={`${activeTab === step.id ? 'text-cyan-400' : 'text-slate-600'}`}>
-                {step.icon}
-              </div>
-              {step.title}
-            </button>
-          ))}
+        <div className="mt-6 px-6 flex-1 space-y-2 overflow-y-auto">
+          {/* Tareas Actuales */}
+          <div className="mb-2">
+            <p className="text-cyan-500 text-xs font-black uppercase tracking-widest pl-2 mb-3">En Progreso</p>
+            <div className="space-y-2">
+              {steps.filter(s => !s.archived).map((step) => (
+                <button
+                  key={step.id}
+                  onClick={() => { setActiveTab(step.id); setIsMenuOpen(false); }}
+                  className={`w-full flex items-center gap-4 px-6 py-5 rounded-2xl text-base font-semibold transition-all duration-300 ${
+                    activeTab === step.id 
+                      ? 'bg-cyan-500/10 border border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.15)] text-cyan-300 translate-x-2' 
+                      : 'text-slate-400 hover:bg-white/5 hover:text-slate-200 border border-transparent'
+                  }`}
+                >
+                  <div className={`${activeTab === step.id ? 'text-cyan-400' : 'text-slate-500'}`}>
+                    {step.icon}
+                  </div>
+                  {step.title}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Archivo de completados */}
+          <div className="mt-8">
+            <p className="text-emerald-500/60 text-xs font-bold uppercase tracking-widest pl-2 mb-3">Pasos Ya Realizados</p>
+            <div className="space-y-2">
+              {steps.filter(s => s.archived).map((step) => (
+                <button
+                  key={step.id}
+                  onClick={() => { setActiveTab(step.id); setIsMenuOpen(false); }}
+                  className={`w-full flex items-center gap-4 px-6 py-4 rounded-2xl text-sm font-medium transition-all duration-300 ${
+                    activeTab === step.id 
+                      ? 'bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 translate-x-2' 
+                      : 'text-slate-600 hover:bg-white/5 hover:text-slate-400 border border-transparent'
+                  }`}
+                >
+                  <div className={`${activeTab === step.id ? 'text-emerald-400' : 'text-emerald-500/50'}`}>
+                    {step.icon}
+                  </div>
+                  <span className="line-through opacity-70">{step.title.replace('✓ ', '')}</span>
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="p-6 m-6 bg-slate-900/60 rounded-2xl border border-white/5 backdrop-blur-md">
@@ -119,7 +148,7 @@ const App = () => {
 
         <AnimatePresence mode="wait">
         {activeTab === 'preparacion' && (
-          <SectionWrapper key="preparacion" title="Paso 1: Preparativos del Viaje">
+          <SectionWrapper key="preparacion" title="Paso 3: Preparativos del Viaje">
             
             <Card title="🚕 Transporte Interno (Aguadas ➔ Pereira)" icon={<MapPin className="w-6 h-6 text-amber-400" />} type="warning">
               <div className="mb-4 text-slate-300 text-lg">
@@ -359,7 +388,7 @@ const App = () => {
         )}
 
         {activeTab === 'frontera' && (
-          <SectionWrapper key="frontera" title="Paso 2: Itinerario y Frontera">
+          <SectionWrapper key="frontera" title="Paso 4: Itinerario y Frontera">
             
             <Card title="✈️ VUELOS Y HORARIOS CONVERSOS" type="success" icon={<Plane className="w-6 h-6 text-emerald-400" />}>
               <div className="mb-8 bg-emerald-950/40 p-6 rounded-2xl border border-emerald-500/20 flex flex-col sm:flex-row gap-6 items-center">
@@ -570,41 +599,70 @@ const App = () => {
         )}
 
         {activeTab === 'transicion' && (
-          <SectionWrapper key="transicion" title="Paso 3: Transición (A futuro)">
-            
-            <Card title="💴 Estrategia Logística Económica" icon={<DollarSign className="w-6 h-6 text-cyan-400" />} type="info">
-               <p className="mb-6 text-cyan-200">Reafirmando la norma de los 1,000€. Mejor ir seguros y sobrados.</p>
-               <div className="bg-cyan-950/40 p-6 or rounded-2xl border border-cyan-500/20">
-                  <h4 className="font-extrabold text-cyan-400 text-lg mb-3">Tu salvoconducto Europeo:</h4>
-                  <p className="text-slate-300 leading-loose">
-                    Se exige demostrar legalmente <strong className="text-cyan-300 text-xl mx-1 bg-cyan-900/50 px-2 py-1 rounded">113€ diarios</strong>. Como son 8 días justos de vuelo, el mínimo del Estado son 904€. Redondea a los 1,000€. Presentar tarjeta de crédito es perfectamente lícito (idealmente pedir extracto bancario reciente).
-                  </p>
-               </div>
+          <SectionWrapper key="transicion" title="Paso 1: Trámite Estancia por Estudios">
+            <Card title="🎯 Proceso de Cambio: Turista a Estudiante" icon={<GraduationCap className="w-6 h-6 text-purple-400" />} type="info">
+              <p className="text-slate-300 text-lg mb-6 leading-relaxed">
+                El objetivo inmediato es tramitar tu <strong>Autorización de Estancia por Estudios</strong> estando ya en España. Para que el expediente sea exitoso, debemos cumplir con los requisitos que exige Extranjería antes de que caduquen tus 90 días de turismo (idealmente presentar la solicitud antes del día 60).
+              </p>
+              
+              <h4 className="font-bold text-cyan-300 text-xl mb-4 border-b border-cyan-500/20 pb-2 flex items-center gap-2"><FileText className="w-5 h-5"/> Requisitos Clave (Fase Actual):</h4>
+              <ul className="space-y-4 mb-8">
+                <li className="flex gap-4 items-start">
+                  <div className="bg-cyan-500/20 p-2 rounded-lg text-cyan-400 mt-0.5"><CheckCircle className="w-5 h-5"/></div>
+                  <div>
+                    <strong className="text-slate-100 block mb-1">1. Matrícula en Centro Autorizado</strong>
+                    <span className="text-slate-400">Inscripción real en un curso a tiempo completo (mínimo 20 hrs/semana) que conduzca a la obtención de un título o certificado en un centro autorizado de Madrid.</span>
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start">
+                  <div className="bg-emerald-500/20 p-2 rounded-lg text-emerald-400 mt-0.5"><CheckCircle className="w-5 h-5"/></div>
+                  <div>
+                    <strong className="text-slate-100 block mb-1">2. Demostración de Medios Económicos (Solucionado)</strong>
+                    <span className="text-slate-400">Se exige demostrar el 100% del IPREM (~600€/mes). Esto se resolverá a través de un servicio de préstamo de manutención que ofrece <strong>MigraEmpleo</strong>. Ellos depositan el dinero directamente en tu cuenta para que puedas demostrar tu solvencia económica oficial ante Extranjería sin complicaciones.</span>
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start">
+                  <div className="bg-purple-500/20 p-2 rounded-lg text-purple-400 mt-0.5"><CheckCircle className="w-5 h-5"/></div>
+                  <div>
+                    <strong className="text-slate-100 block mb-1">3. Seguro Médico Privado (Sanitas International Students)</strong>
+                    <span className="text-slate-400">Extranjería exige pólizas sin copagos, sin carencias y con repatriación incluida. <strong>Sanitas</strong> tiene un producto específico ("International Students") que está diseñado estrictamente para cumplir al 100% con estas normativas de extranjería, por lo que es perfecto para este trámite.</span>
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start">
+                  <div className="bg-amber-500/20 p-2 rounded-lg text-amber-400 mt-0.5"><CheckCircle className="w-5 h-5"/></div>
+                  <div>
+                    <strong className="text-slate-100 block mb-1">4. Antecedentes Penales y Certificado Médico</strong>
+                    <span className="text-slate-400">Solo si el curso dura más de 6 meses. Los antecedentes colombianos apostillados (ya los estás procesando) y un certificado médico oficial expedido en España.</span>
+                  </div>
+                </li>
+              </ul>
             </Card>
 
-            <div className="mt-8 overflow-hidden rounded-3xl glass-card p-8">
-              <h3 className="font-extrabold text-slate-100 text-2xl mb-6 flex items-center gap-3">
-                <GraduationCap className="w-8 h-8 text-purple-400" /> Estatus Estudiantil (Después que Aterrices)
-              </h3>
-              <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                Una vez hayas entrado en calidad de turismo (¡que esa era tu finalidad fronteriza!), entonces ya como persona libre en territorio español en una segunda fase buscaremos radicar documentos. Hay 90 días disponibles:
+            <div className="mt-8 p-8 bg-emerald-950/40 rounded-3xl border border-emerald-500/40 shadow-[0_0_25px_rgba(16,185,129,0.15)] transform hover:-translate-y-1 transition-all duration-300">
+              <h4 className="font-extrabold text-emerald-400 text-2xl mb-4 flex items-center gap-3">
+                <Users className="w-8 h-8" /> Contacto Inmediato: MigraEmpleo
+              </h4>
+              <p className="text-emerald-100/90 text-lg leading-relaxed mb-6">
+                Para garantizar que no haya errores en el expediente y validar el centro de estudios, la acción inmediata es delegar la consulta en expertos vinculados a la Universidad Rey Juan Carlos.
               </p>
-              <div className="grid md:grid-cols-2 gap-6">
-                 <div className="p-6 bg-indigo-950/40 rounded-2xl border border-indigo-500/20 hover:-translate-y-1 transition-transform cursor-default">
-                    <strong className="text-indigo-300 text-xl mb-2 block">1. Formación Profesional Superior</strong>
-                    <p className="text-indigo-200/70 leading-relaxed mt-2">Buscar convalidaciones con tu universidad colombiana para matricularte como estudiante (Homologación).</p>
-                 </div>
-                 <div className="p-6 bg-purple-950/40 rounded-2xl border border-purple-500/20 hover:-translate-y-1 transition-transform cursor-default">
-                    <strong className="text-purple-300 text-xl mb-2 block">2. Cursos Cortos Oficiales</strong>
-                    <p className="text-purple-200/70 leading-relaxed mt-2">Cursos de formación rápida (Paisajismo/Marketing) que justifiquen una larga estadía, permitiendo trabajo medio tiempo.</p>
-                 </div>
+              
+              <div className="bg-emerald-900/40 p-5 rounded-2xl border border-emerald-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                  <strong className="block text-emerald-300 text-lg mb-1">Portal Oficial y Contacto:</strong>
+                  <a href="https://migraempleo.com/" target="_blank" rel="noopener noreferrer" className="text-2xl font-black text-white hover:text-cyan-300 transition-colors flex items-center gap-2">
+                    migraempleo.com <ArrowRight className="w-6 h-6 text-emerald-400" />
+                  </a>
+                </div>
+                <div className="bg-emerald-950 px-5 py-3 rounded-xl border border-emerald-500/40 text-emerald-400 font-bold tracking-widest text-sm uppercase shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+                  Acción Requerida
+                </div>
               </div>
             </div>
           </SectionWrapper>
         )}
 
         {activeTab === 'logistica' && (
-          <SectionWrapper key="logistica" title="Paso 4: Logística en Madrid">
+          <SectionWrapper key="logistica" title="Paso 2: Logística en Madrid">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <Card title="🏠 Tu Alojamiento Seguro" icon={<MapPin className="w-6 h-6 text-emerald-400" />} type="success">
                 <div className="flex items-center gap-3 mb-5 inline-flex bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-4 py-1.5 rounded-full">
