@@ -1,5 +1,20 @@
 # Changelog - SoranyProyect (Ruta Migratoria)
 
+## [22-05-2026] - Transición Oficial a la Fase 2: Estancia por Estudios (v3.0)
+
+### ✅ Completado hoy
+- **Transición Oficial a la Fase 2 🎓⚖️:** Redireccionamiento estratégico del proyecto tras el éxito total del viaje (Fase 1 completada con el aterrizaje de Sorany en Barajas el 08-05-2026).
+- **Refactorización de la SPA (src/App.jsx) 🛠️:**
+  - Reorganización completa del menú de navegación lateral.
+  - Archivado ordenado de los tramos y maletas de la Fase 1 en la sección "Pasos Ya Realizados".
+  - Establecimiento de **"Legal y Finanzas"** (`activeTab === 'transicion'`) como pestaña prioritaria.
+  - Limpieza de datos y guiones de turismo obsoletos en el control fronterizo (como los 113€ diarios y reservas temporales de hotel).
+- **Estructuración de los 4 Pilares de Estancia 📋:**
+  - Integración visual y metodológica en la interfaz de los requisitos de la solicitud: Matrícula homologada (+20h presenciales), Demostración de Solvencia Económica, Seguro Sanitas International Students y Certificado médico/Antecedentes.
+- **Optimización del Ecosistema Local 🔐:**
+  - Configuración y validación del archivo `.gitignore` para excluir ficheros pesados (>400MB) como el historial comprimido de WhatsApp, asegurando empujes (git push) rápidos y estables vía SSH.
+  - Actualización integral del archivo de tareas pendientes (`informe_tareas_pendientes.md`) reflejando el nuevo plan de ruta de 90 días.
+
 ## [08-05-2026] - Rediseño Visual del Equipaje de Cabina y Mochila (v2.8)
 
 ### ✅ Completado hoy

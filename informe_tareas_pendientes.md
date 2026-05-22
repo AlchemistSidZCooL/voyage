@@ -6,8 +6,13 @@
 - [x] Tarea 6: Actualizar archivo `README.md`.
 - [x] Tarea 7: Crear el archivo `CHANGELOG.md` con los detalles de la v2.0.
 - [x] Tarea 8: Obtener Registro de Nacimiento (Completado por Sorany).
-- [ ] Tarea 9: Verificar Apostilla de antecedentes/registro (En proceso por Sorany).
-- [x] Tarea 10: Definir Seguro Schengen y crear guía de compra (Sorany lo comprará directamente siguiendo instrucciones en la Web).
-- [x] Tarea 11: Reserva de hotel cancelable completada. PDF recibido y guardado en el proyecto.
-- [ ] Tarea 12: Recibir PDFs de Sorany para centralización y control migratorio.
-- [ ] Tarea 13: Contactar a MigraEmpleo (https://migraempleo.com/) para asesoramiento y gestión de trámites de estancia por estudios en España.
+- [x] Tarea 10: Definir Seguro Schengen y crear guía de compra (Completado: Póliza emitida).
+- [x] Tarea 11: Reserva de hotel cancelable completada (Completado: Válido para cruce de frontera).
+- [x] Tarea 12: Recibir PDFs de Sorany para centralización y control migratorio (Completado: Aterrizaje exitoso el 08-05-2026).
+- [ ] Tarea 9: Obtener Apostilla colombiana de Antecedentes Penales y Registro de Nacimiento (En proceso por Sorany).
+- [ ] Tarea 13: Contactar formalmente a MigraEmpleo (https://migraempleo.com/) para asesoramiento del trámite de estancia por estudios.
+- [ ] Tarea 14: Validar y seleccionar centro de estudios homologado (+20h presenciales semanales) por la Comunidad de Madrid o el SEPE.
+- [ ] Tarea 15: Definir la vía de demostración de solvencia económica (Validar viabilidad del préstamo de MigraEmpleo vs. Acta Notarial de Dani).
+- [ ] Tarea 16: Contratar seguro médico privado "Sanitas International Students" (sin copagos ni carencias).
+- [ ] Tarea 17: Obtener el Certificado Médico Oficial en España.
+- [ ] Tarea 18: Consolidar y presentar expediente de Estancia por Estudios ante la Oficina de Extranjería antes del 7 de julio de 2026 (Día 60).
