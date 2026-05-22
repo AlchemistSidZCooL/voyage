@@ -18,7 +18,13 @@
 - [ ] **Tarea 9:** Obtener la Apostilla colombiana de Antecedentes Penales y Registro de Nacimiento (En gestión por Sorany en origen).
 - [ ] **Tarea 13:** Contactar formalmente a **MigraEmpleo** ([migraempleo.com](https://migraempleo.com/)) para asesoramiento del trámite y opciones de ayuda.
 
-### 🟡 Importantes (Fijar en los próximos 15 días)
+### 🟡 Control Financiero y Préstamos Planificados (Fase 2)
+- [ ] **Pago 29-Jun-2026:** Cuota 1 CIESA (315 €) y Alquiler de Habitación Mes 1 (420 €) — Total: 735 €.
+- [ ] **Pago 04-Jul-2026:** Cuota 2 CIESA (315 €) y Alquiler de Habitación Mes 2 (420 €) — Total: 735 €.
+- [ ] **Pago Agosto-2026:** Cuota 3 CIESA (315 €) y Alquiler de Habitación Mes 3 (420 €) — Total: 735 €.
+- [ ] **Pago 04-Sep-2026:** Cuota 4 CIESA (315 €) — Total: 315 €.
+
+### 🔵 Importantes (Fijar en los próximos 15 días)
 - [ ] **Tarea 14:** Validar y seleccionar el **Centro de Estudios Homologado** (+20h presenciales semanales) por la Comunidad de Madrid o el SEPE para obtener la matrícula.
 - [ ] **Tarea 15:** Definir la vía de demostración de **Solvencia Económica** (Validar viabilidad del préstamo de MigraEmpleo vs. Acta Notarial de Dani).
 - [ ] **Tarea 16:** Contratar el seguro médico privado **"Sanitas International Students"** (sin copagos ni carencias).
@@ -30,6 +36,10 @@
 ---
 
 ## 🕒 II. TAREAS COMPLETADAS (Historial de Éxitos)
+- [x] **Control Financiero Inicial (22-05-2026):** Creación del registro ledger [registro_prestamos_sorany.md](file:///home/sidzcool/GeminiSolutions/SoranyProyect/registro_prestamos_sorany.md) e integración en la SPA del panel financiero interactivo de préstamos (Desembolsado: 368 € / Total: 2.888 €).
+- [x] **Agrupación y Clasificación Documental (22-05-2026):** Organización y renombrado de las 9 fotos del contrato y recibo de matrícula CIESA en el directorio [contrato_estudios_ciesa/](file:///home/sidzcool/GeminiSolutions/SoranyProyect/contrato_estudios_ciesa/).
+- [x] **Pago Certificado Médico (22-05-2026):** Adelanto de 28 € para el trámite de certificado médico.
+- [x] **Matrícula CIESA (22-05-2026):** Pago inicial de matrícula de 340 € en efectivo (documentado con el recibo de caja de CIESA).
 - [x] **Tarea 12:** Recibir PDFs de Sorany para centralización y control migratorio (Aterrizaje exitoso).
 - [x] **Tarea 11:** Reserva de hotel cancelable (Válido para cruce de frontera).
 - [x] **Tarea 10:** Definir Seguro Schengen y emitir póliza (IATI).
@@ -39,6 +49,11 @@
 ---
 
 ## 📑 III. HISTORIAL DE VERSIONES (CHANGELOG RESUMIDO)
+
+### v3.1 (22-05-2026) - Ecosistema Financiero y Expediente CIESA 💰📂
+*   **Gestión Documental:** Recepción, renombrado y agrupación inteligente de las 9 imágenes del contrato de CIESA Formación (Migraempleo) y su recibo de matrícula de 340 € en el directorio `contrato_estudios_ciesa/`.
+*   **Registro Financiero e Interfaz:** Creación del ledger formal de préstamos en `registro_prestamos_sorany.md` y adición de la tarjeta interactiva de presupuesto (Matrícula + Certificado Médico + 3 meses de Alquiler + 4 cuotas de estudios = 2.888 €) en el módulo principal "Legal y Finanzas" de la SPA.
+*   **Planificación Crítica:** Integración del cronograma detallado de desembolsos para evitar imprevistos y controlar el flujo de caja del proyecto.
 
 ### v3.0 (22-05-2026) - Transición Oficial a la Fase 2 🎓
 *   **Refactorización de la SPA (`App.jsx`):** Reorganización del menú lateral, archivado de la Fase 1 en "Pasos Ya Realizados", y priorización de la pestaña **"Legal y Finanzas"** (`activeTab === 'transicion'`).

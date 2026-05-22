@@ -665,6 +665,112 @@ const App = () => {
                 </div>
               </div>
             </div>
+
+            <Card title="💰 Registro de Control Financiero y Préstamos" icon={<DollarSign className="w-6 h-6 text-emerald-400" />} type="success">
+              <p className="text-slate-300 text-lg mb-6 leading-relaxed">
+                Control y seguimiento formal de los importes abonados y planificados por parte de <strong>Dani</strong> para financiar la matrícula, estudios y manutención de <strong>Sorany</strong> en esta Fase 2.
+              </p>
+
+              {/* Tarjetas de Resumen */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                <div className="bg-slate-950/60 p-4 rounded-2xl border border-white/5 flex flex-col justify-between shadow-inner">
+                  <span className="text-slate-400 text-sm font-bold uppercase tracking-wider">Total Presupuestado</span>
+                  <span className="text-3xl font-black text-slate-100 mt-2">2.888 €</span>
+                </div>
+                <div className="bg-emerald-950/30 p-4 rounded-2xl border border-emerald-500/20 flex flex-col justify-between shadow-inner">
+                  <span className="text-emerald-400 text-sm font-bold uppercase tracking-wider flex items-center gap-1.5">
+                    <CheckCircle className="w-4 h-4 text-emerald-400" /> Ya Desembolsado
+                  </span>
+                  <span className="text-3xl font-black text-emerald-300 mt-2">368 €</span>
+                </div>
+                <div className="bg-amber-950/20 p-4 rounded-2xl border border-amber-500/20 flex flex-col justify-between shadow-inner">
+                  <span className="text-amber-400 text-sm font-bold uppercase tracking-wider flex items-center gap-1.5">
+                    <Clock className="w-4 h-4 text-amber-400" /> Pendiente
+                  </span>
+                  <span className="text-3xl font-black text-amber-300 mt-2">2.520 €</span>
+                </div>
+              </div>
+
+              {/* Lista de Conceptos Principales */}
+              <div className="space-y-4 mb-6">
+                <div className="bg-slate-900/60 p-4 rounded-xl border border-white/5 flex justify-between items-center">
+                  <div>
+                    <h5 className="font-bold text-slate-100 text-base">Inscripción / Matrícula Estudios</h5>
+                    <p className="text-slate-400 text-sm mt-0.5">Curso "Especialista Administrativo" en CIESA (Migraempleo)</p>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_10px_rgba(16,185,129,0.1)]">
+                      340 € <CheckCircle className="w-3.5 h-3.5" />
+                    </span>
+                    <p className="text-[10px] text-slate-500 mt-1">22-05-2026 (Efectivo)</p>
+                  </div>
+                </div>
+
+                <div className="bg-slate-900/60 p-4 rounded-xl border border-white/5 flex justify-between items-center">
+                  <div>
+                    <h5 className="font-bold text-slate-100 text-base">Certificado Médico Oficial</h5>
+                    <p className="text-slate-400 text-sm mt-0.5">Obtenido en España para el expediente de extranjería</p>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_10px_rgba(16,185,129,0.1)]">
+                      28 € <CheckCircle className="w-3.5 h-3.5" />
+                    </span>
+                    <p className="text-[10px] text-slate-500 mt-1">22-05-2026</p>
+                  </div>
+                </div>
+
+                <div className="bg-slate-900/40 p-4 rounded-xl border border-white/5 flex justify-between items-center">
+                  <div>
+                    <h5 className="font-bold text-slate-200 text-base">Alquiler de Habitación (3 Meses)</h5>
+                    <p className="text-slate-400 text-sm mt-0.5">3 mensualidades de 420 € cada una (Habitación 3)</p>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-amber-400 bg-amber-950/20 border border-amber-500/20 px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_10px_rgba(245,158,11,0.05)]">
+                      1.260 € <Clock className="w-3.5 h-3.5" />
+                    </span>
+                    <p className="text-[10px] text-slate-500 mt-1">Planificado (Jun-Ago)</p>
+                  </div>
+                </div>
+
+                <div className="bg-slate-900/40 p-4 rounded-xl border border-white/5 flex justify-between items-center">
+                  <div>
+                    <h5 className="font-bold text-slate-200 text-base">Cuotas Mensuales Estudios CIESA</h5>
+                    <p className="text-slate-400 text-sm mt-0.5">4 cuotas de 315 € cada una (Bloque 6)</p>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-amber-400 bg-amber-950/20 border border-amber-500/20 px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_10px_rgba(245,158,11,0.05)]">
+                      1.260 € <Clock className="w-3.5 h-3.5" />
+                    </span>
+                    <p className="text-[10px] text-slate-500 mt-1">Planificado (Jun-Sep)</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Calendario de Vencimientos Planificados */}
+              <div className="bg-slate-950/40 p-5 rounded-2xl border border-white/5">
+                <h4 className="font-bold text-slate-200 text-base mb-4 flex items-center gap-2">
+                  <Calendar className="w-5 h-5 text-cyan-400" /> Cronograma y Proyección de Pagos
+                </h4>
+                <div className="space-y-3">
+                  <div className="bg-slate-900/30 p-3 rounded-lg border-l-2 border-cyan-500/50 flex justify-between text-sm">
+                    <span className="text-slate-300 font-semibold">📅 29 de Junio de 2026</span>
+                    <span className="text-slate-200 font-black">735 € <span className="text-xs text-slate-500 font-medium">(420€ Alquiler + 315€ Estudios)</span></span>
+                  </div>
+                  <div className="bg-slate-900/30 p-3 rounded-lg border-l-2 border-cyan-500/50 flex justify-between text-sm">
+                    <span className="text-slate-300 font-semibold">📅 04 de Julio de 2026</span>
+                    <span className="text-slate-200 font-black">735 € <span className="text-xs text-slate-500 font-medium">(420€ Alquiler + 315€ Estudios)</span></span>
+                  </div>
+                  <div className="bg-slate-900/30 p-3 rounded-lg border-l-2 border-cyan-500/50 flex justify-between text-sm">
+                    <span className="text-slate-300 font-semibold">📅 Agosto de 2026</span>
+                    <span className="text-slate-200 font-black">735 € <span className="text-xs text-slate-500 font-medium">(420€ Alquiler + 315€ Estudios)</span></span>
+                  </div>
+                  <div className="bg-slate-900/30 p-3 rounded-lg border-l-2 border-purple-500/50 flex justify-between text-sm">
+                    <span className="text-slate-300 font-semibold">📅 04 de Septiembre de 2026</span>
+                    <span className="text-slate-200 font-black">315 € <span className="text-xs text-slate-500 font-medium">(315€ Estudios)</span></span>
+                  </div>
+                </div>
+              </div>
+            </Card>
           </SectionWrapper>
         )}
 

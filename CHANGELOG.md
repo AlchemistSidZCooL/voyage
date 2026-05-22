@@ -1,6 +1,16 @@
 # Changelog - SoranyProyect (Ruta Migratoria)
 
-## [22-05-2026] - Transición Oficial a la Fase 2: Estancia por Estudios (v3.0)
+## [22-05-2026] - Ecosistema Financiero y Expediente de Matrícula CIESA (v3.1) 💰📂
+
+### ✅ Completado hoy
+- **Clasificación y Agrupación Documental 📂:** Recepción, procesamiento visual, renombrado y agrupación estructurada de las 9 imágenes asociadas a la inscripción académica de Sorany en la nueva carpeta dedicada `contrato_estudios_ciesa/`:
+  - `contrato_pagina_1.jpeg` a `contrato_pagina_7_firmas.jpeg` (incluye versiones en blanco y rellenas de la forma de pago).
+  - `recibo_matricula_340.jpeg` (comprobante de caja de 340 € firmado por CIESA).
+- **Creación de Registro de Préstamos (`registro_prestamos_sorany.md`) 💰:** Redacción de un ledger financiero formal de préstamos entre Dani y Sorany, separando los importes ya desembolsados (Matrícula + Certificado Médico = 368 €) de los planificados a futuro (Alquileres y Mensualidades de estudios = 2.520 €).
+- **Integración en la SPA (`src/App.jsx`) 🛠️:** Diseño y renderizado de una nueva tarjeta interactiva y premium de "Control Financiero y Préstamos" bajo el estilo Cyberpunk de la pestaña "Legal y Finanzas", mostrando métricas clave y el cronograma de vencimientos mensuales.
+- **Actualización de Tareas Pendientes (`00_PENDIENTE_Y_CHANGELOG.md`) 📋:** Inclusión de las fechas y subtotales de vencimiento mensuales en el checklist global de prioridad.
+
+## [22-05-2026] - Transición Oficial a la Fase 2: Estancia por Estudios (v3.0) 🎓⚖️
 
 ### ✅ Completado hoy
 - **Transición Oficial a la Fase 2 🎓⚖️:** Redireccionamiento estratégico del proyecto tras el éxito total del viaje (Fase 1 completada con el aterrizaje de Sorany en Barajas el 08-05-2026).
