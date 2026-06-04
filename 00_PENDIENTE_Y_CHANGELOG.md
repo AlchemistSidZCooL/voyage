@@ -14,22 +14,30 @@
 
 ## 📋 I. TAREAS PENDIENTES (Ordenadas por prioridad)
 
-### 🔴 Urgentes & Críticas (Acción Inmediata)
-- [ ] **Tarea 9:** Obtener la Apostilla colombiana de Antecedentes Penales y Registro de Nacimiento (En gestión por Sorany en origen).
-- [ ] **Tarea 13:** Contactar formalmente a **MigraEmpleo** ([migraempleo.com](https://migraempleo.com/)) para asesoramiento del trámite y opciones de ayuda.
+### 🔴 Urgentes & Críticas (Acción Inmediata - Consolidación de Expediente)
+> **¡ALERTA DE TIEMPO!** Nos queda poco tiempo para terminar de tramitar el expediente. Faltan estos 6 documentos clave:
+
+- [/] **1. Antecedentes penales apostillados:** Solicitud de apostilla enviada a Cancillería. Esperando recepción del PDF en el correo (plazo máx. 3 días hábiles).
+- [x] **2. Seguro médico:** COMPLETADO. Póliza SegurCaixa Adeslas (COMPLETA + Repatriación).
+- [ ] **3. Solvencia económica / préstamo:** Definir formalmente préstamo MigraEmpleo vs. Acta Notarial.
+- [ ] **4. Soporte de pago préstamo:** Conseguir comprobante (depende del punto 3).
+- [ ] **5. Soporte de pago segunda cuota:** Pago de Cuota 1 CIESA de Junio (315 €).
+- [ ] **6. Certificado Movimiento migratorio:** Solicitar a Migración Colombia.
+- [ ] **Tarea 13:** Contactar formalmente a **MigraEmpleo** ([migraempleo.com](https://migraempleo.com/)) para asesoramiento del trámite.
 
 ### 🟡 Control Financiero y Préstamos Planificados (Fase 2)
-- [ ] **Pago 29-Jun-2026:** Cuota 1 CIESA (315 €) y Alquiler de Habitación Mes 1 (420 €) — Total: 735 €.
-- [ ] **Pago 04-Jul-2026:** Cuota 2 CIESA (315 €) y Alquiler de Habitación Mes 2 (420 €) — Total: 735 €.
-- [ ] **Pago Agosto-2026:** Cuota 3 CIESA (315 €) y Alquiler de Habitación Mes 3 (420 €) — Total: 735 €.
+- [ ] **Pago Junio-2026:** Cuota 1 CIESA (315 €) y Aporte Vivienda Mes 1 (285 €) — Total: 600 €.
+- [ ] **Pago Julio-2026:** Cuota 2 CIESA (315 €) y Aporte Vivienda Mes 2 (285 €) — Total: 600 €.
+- [ ] **Pago Agosto-2026:** Cuota 3 CIESA (315 €) y Aporte Vivienda Mes 3 (285 €) — Total: 600 €.
 - [ ] **Pago 04-Sep-2026:** Cuota 4 CIESA (315 €) — Total: 315 €.
 
 ### 🔵 Importantes (Fijar en los próximos 15 días)
 - [ ] **Tarea 14:** Validar y seleccionar el **Centro de Estudios Homologado** (+20h presenciales semanales) por la Comunidad de Madrid o el SEPE para obtener la matrícula.
 - [ ] **Tarea 15:** Definir la vía de demostración de **Solvencia Económica** (Validar viabilidad del préstamo de MigraEmpleo vs. Acta Notarial de Dani).
-- [ ] **Tarea 16:** Contratar el seguro médico privado **"Sanitas International Students"** (sin copagos ni carencias).
+- [x] **Tarea 16:** Contratar seguro médico privado *(Completado: Adeslas COMPLETA + Repatriación)*.
 
 ### 🟢 Logística de Cierre (Antes del 7 de Julio de 2026)
+- [ ] **Tarea 14b:** Solicitar certificado de matrícula a CIESA para evitar bloqueo de cuenta BBVA.
 - [ ] **Tarea 17:** Obtener el Certificado Médico Oficial en España.
 - [ ] **Tarea 18:** Consolidar y presentar expediente completo de Estancia por Estudios ante la Oficina de Extranjería.
 
@@ -50,10 +58,25 @@
 
 ## 📑 III. HISTORIAL DE VERSIONES (CHANGELOG RESUMIDO)
 
+### v3.5 (04-06-2026) - Optimización de Presupuesto y Apostilla en Curso 📉🏛️
+*   **Ajuste Financiero:** Reducción del presupuesto estimado de vivienda/manutención de 420 € a 285 € mensuales, bajando el total general del proyecto de 2.888 € a 2.483 €. Actualización reflejada en `registro_prestamos_sorany.md` y en las tarjetas de la UI (`App.jsx`).
+*   **Trámite de Apostilla:** Certificado de Antecedentes Penales actualizado descargado con éxito. Solicitud de Apostilla de La Haya ingresada en la Cancillería de Colombia y en espera de expedición.
+
+### v3.4 (29-05-2026) - Seguro Médico Adeslas y Avance Documental 🛡️📄
+*   **Seguro Médico Completado:** Validación y registro de la póliza Adeslas COMPLETA + Repatriación. Cumple todos los requisitos de Extranjería.
+*   **Gestión de Bloqueo Policial:** Redacción y envío del correo a la DIJIN para forzar la actualización de apellidos en la base de datos de Antecedentes Judiciales.
+
+### v3.3 (26-05-2026) - Consolidación de Expediente y Limpieza 📑🧹
+*   **Priorización de Tareas:** Reestructuración de requisitos faltantes para marcar los 6 documentos críticos del expediente como urgentes.
+*   **Limpieza de Entorno:** Borrado de archivos ZIP redundantes (ya extraídos) para aligerar la carga del proyecto.
+
+### v3.2 (22-05-2026) - Bloqueo de Antecedentes 🚨
+*   **Gestión de Bloqueo:** Análisis del Derecho de Petición para solventar la discrepancia de apellidos en la base de datos de la Policía Nacional ("Florez Cardona" vs "Pineda Florez").
+
 ### v3.1 (22-05-2026) - Ecosistema Financiero y Expediente CIESA 💰📂
 *   **Gestión Documental:** Recepción, renombrado y agrupación inteligente de las 9 imágenes del contrato de CIESA Formación (Migraempleo) y su recibo de matrícula de 340 € en el directorio `contrato_estudios_ciesa/`.
-*   **Registro Financiero e Interfaz:** Creación del ledger formal de préstamos en `registro_prestamos_sorany.md` y adición de la tarjeta interactiva de presupuesto (Matrícula + Certificado Médico + 3 meses de Alquiler + 4 cuotas de estudios = 2.888 €) en el módulo principal "Legal y Finanzas" de la SPA.
-*   **Planificación Crítica:** Integración del cronograma detallado de desembolsos para evitar imprevistos y controlar el flujo de caja del proyecto.
+*   **Registro Financiero e Interfaz:** Creación del ledger formal de préstamos en `registro_prestamos_sorany.md` y adición de la tarjeta interactiva de presupuesto (Matrícula + Certificado Médico + 3 meses de aporte a la vivienda compartida a 285 €/mes + 4 cuotas de estudios = 2.483 €) en el módulo principal "Legal y Finanzas" de la SPA.
+*   **Planificación Crítica:** Integración del cronograma detallado de desembolsos para evitar imprevistos y controlar el flujo de caja del proyecto. Identificación del Bloqueo Crítico de Antecedentes (Florez Cardona vs Pineda Florez).
 
 ### v3.0 (22-05-2026) - Transición Oficial a la Fase 2 🎓
 *   **Refactorización de la SPA (`App.jsx`):** Reorganización del menú lateral, archivado de la Fase 1 en "Pasos Ya Realizados", y priorización de la pestaña **"Legal y Finanzas"** (`activeTab === 'transicion'`).

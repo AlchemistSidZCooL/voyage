@@ -1,20 +1,18 @@
-# Portal de Ruta Migratoria: Sorany a Madrid ✈️🇪🇸 (v2.0)
+# Portal de Ruta Migratoria: Sorany a Madrid 🎓🇪🇸 (v3.2)
 
 Este portal es una aplicación interactiva desarrollada en **React** diseñada para gestionar de manera profesional, estratégica y **sin ansiedad** el proceso migratorio de **Sorany** desde Aguadas (Caldas) hacia Madrid (España).
 
-En esta última iteración (v2.2) el portal se consolida como un **ecosistema táctico de respuesta rápida (SPA)**, enfocado de manera pura y pragmática en la logística pre-vuelo: gestión de tiempos, límites de equipaje exactos, reajuste presupuestario, husos horarios y un guion oficial verificable para el control migratorio de Barajas.
+Habiendo superado con éxito la "Fase 1" (Viaje y Frontera), el portal se consolida en su versión **v3.2** como un **ecosistema de transición legal y financiera (Fase 2)**, enfocado puramente en la obtención de la Autorización de Estancia por Estudios, el seguimiento de expedientes y el control presupuestario de préstamos.
 
 ---
 
 ## 🚀 Funcionalidades Principales
 
-*   **Arquitectura de UI Funcional:** Interfaz desarrollada estrictamente en base a legibilidad e inmediatez. Utiliza tarjetas independientes de información diseñadas para minimizar la carga cognitiva del usuario ante el proceso.
-*   **Hoja de Ruta enfocada en Logística Inmediata:**
-    1.  **Preparativos del Viaje:** Tareas de cuenta regresiva (a 30 y 15 días) totalmente orientadas en la **estrategia de equipaje** (Regla de oro: Mochila Personal y Maleta 10KG "El Rollito").
-    2.  **Itinerarios y Frontera (¡Reloj Mundial!):** 
-        *   Tramos exactos entre PEI-BOG y BOG-MAD. 
-        *   Simulación de aterrizaje y control de husos horarios (Madrid +7 horas para organizar comunicación con Colombia en la llegada).
-        *   Respuestas estándar y contundentes para el paso de Migración.
+*   **Arquitectura de UI Funcional:** Interfaz desarrollada estrictamente en base a legibilidad e inmediatez. Utiliza tarjetas independientes de información bajo un diseño "Cyberpunk" para minimizar la carga cognitiva del usuario.
+*   **Gestión de Transición Legal (Fase 2):**
+    1.  **Requisitos de Extranjería:** Control interactivo de los 4 pilares: Matrícula de estudios (CIESA), Demostración Económica, Seguro Médico (Sanitas) y Antecedentes Penales (Gestión de bloqueos e identidad).
+    2.  **Control Financiero y Préstamos:** Panel interactivo en tiempo real (`registro_prestamos_sorany.md` en el backend y tarjetas de presupuesto en la UI) que mapea el flujo de caja, pagos desembolsados y cronograma de cuotas futuras (vivienda y estudios).
+    3.  **Auditoría Documental:** Organización centralizada de contratos, recibos de caja y expedientes judiciales para evitar errores en las oficinas de Extranjería.
 
 ---
 

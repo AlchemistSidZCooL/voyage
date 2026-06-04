@@ -1,16 +1,384 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Ruta Madrid - Sorany</title>
-  </head>
-  <body class="font-outfit antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>extra
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Crédito - Expediente Sorany</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            /* Corporate Cyberpunk Palette */
+            --bg-base: #050914;
+            --panel-bg: rgba(16, 24, 35, 0.75);
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-cyan: #00f3ff;
+            --accent-cyan-dim: rgba(0, 243, 255, 0.15);
+            --accent-gold: #ffb700;
+            --accent-gold-dim: rgba(255, 183, 0, 0.15);
+            --accent-pink: #ff3366;
+            --border-light: rgba(0, 243, 255, 0.2);
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            margin: 0;
+            padding: 2rem;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 0% 0%, var(--accent-cyan-dim), transparent 40%),
+                radial-gradient(circle at 100% 100%, var(--accent-gold-dim), transparent 40%);
+            background-attachment: fixed;
+        }
+
+        .dashboard {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 2.5rem;
+            max-width: 1050px;
+            margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255,255,255,0.05);
+            position: relative;
+        }
+
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .dashboard-header h1 {
+            font-family: var(--font-display);
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 2.2rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .dashboard-header h1 span {
+            color: var(--accent-cyan);
+            text-shadow: 0 0 15px var(--accent-cyan-dim);
+        }
+
+        .header-line {
+            height: 2px;
+            width: 100px;
+            background: var(--accent-cyan);
+            margin: 1rem auto 0;
+            box-shadow: 0 0 10px var(--accent-cyan);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: rgba(10, 15, 24, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px; height: 100%;
+            background: var(--accent-cyan);
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .card.card-gold::before { background: var(--accent-gold); }
+        .card.card-pink::before { background: var(--accent-pink); }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            border-color: var(--border-light);
+        }
+        .card:hover::before { opacity: 1; }
+
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1rem;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .data-label {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .data-value {
+            color: #fff;
+            text-align: right;
+            font-family: var(--font-display);
+            font-weight: 600;
+        }
+
+        .value-cyan { color: var(--accent-cyan); text-shadow: 0 0 10px var(--accent-cyan-dim); }
+        .value-gold { color: var(--accent-gold); text-shadow: 0 0 10px var(--accent-gold-dim); }
+
+        .select-modern {
+            background: #0a0f14;
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-family: var(--font-display);
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+            width: 120px;
+        }
+        
+        .select-modern.gold {
+            color: var(--accent-gold);
+            border-color: var(--accent-gold);
+        }
+
+        .select-modern:focus { box-shadow: 0 0 10px var(--accent-cyan-dim); }
+        .select-modern.gold:focus { box-shadow: 0 0 10px var(--accent-gold-dim); }
+
+        .total-panel {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, rgba(255, 183, 0, 0.1), rgba(0, 243, 255, 0.05));
+            border: 1px solid rgba(255, 183, 0, 0.3);
+            border-radius: 12px;
+            padding: 3rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .total-panel-title {
+            font-family: var(--font-display);
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .total-amount {
+            font-family: var(--font-display);
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            text-shadow: 0 0 30px rgba(255, 183, 0, 0.3);
+            margin: 0;
+            line-height: 1;
+        }
+
+        .btn {
+            background: transparent;
+            color: var(--text-main);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: var(--font-display);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 1.5rem 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <h1>Plataforma Financiera <span>Sorany</span></h1>
+            <div class="header-line"></div>
+        </div>
+        
+        <div class="grid">
+            <!-- SECCIÓN 1: CLIENTE -->
+            <div class="card">
+                <div class="card-title">Datos Operativos</div>
+                <div class="data-row">
+                    <span class="data-label">Titular</span>
+                    <span class="data-value">Sorany</span>
+                </div>
+                <div class="data-row">
+                    <span class="data-label">DNI</span>
+                    <span class="data-value">56672625G</span>
+                </div>
+                <div class="data-row">
+                    <span class="data-label">Contacto</span>
+                    <span class="data-value">+34 611 28 59 16</span>
+                </div>
+                <div class="data-row">
+                    <span class="data-label">Riesgo Evaluado</span>
+                    <span class="data-value" style="color: var(--accent-pink);">MODERADO-ALTO</span>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 2: PRÉSTAMO PRINCIPAL -->
+            <div class="card card-cyan">
+                <div class="card-title" style="color: var(--accent-cyan);">Cartera 1: Préstamo Principal</div>
+                <div class="data-row">
+                    <span class="data-label">Capital Otorgado</span>
+                    <span class="data-value">350.00 €</span>
+                </div>
+                <div class="data-row">
+                    <span class="data-label">Interés a aplicar</span>
+                    <select class="select-modern" id="tasa-principal" onchange="calcularSistema()">
+                        <option value="0.05" selected>5%</option>
+                        <option value="0.10">10%</option>
+                        <option value="0.15">15%</option>
+                        <option value="0.20">20%</option>
+                        <option value="0.30">30%</option>
+                    </select>
+                </div>
+                <div class="data-row">
+                    <span class="data-label">Rendimiento (Interés)</span>
+                    <span class="data-value value-cyan" id="interes-principal">17.50 €</span>
+                </div>
+                <div class="divider"></div>
+                <div class="data-row">
+                    <span class="data-label">Subtotal Cartera 1</span>
+                    <span class="data-value" id="subtotal-principal">367.50 €</span>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3: MICROCRÉDITOS (EL RESTO) -->
+            <div class="card card-gold">
+                <div class="card-title" style="color: var(--accent-gold);">Cartera 2: Microcréditos</div>
+                <div class="data-row">
+                    <span class="data-label">Adelantos (19€+10€+5€)</span>
+                    <span class="data-value">34.00 €</span>
+                </div>
+                <div class="data-row">
+                    <span class="data-label">Interés a aplicar</span>
+                    <select class="select-modern gold" id="tasa-micro" onchange="calcularSistema()">
+                        <option value="0.05">5%</option>
+                        <option value="0.10">10%</option>
+                        <option value="0.15" selected>15%</option>
+                        <option value="0.20">20%</option>
+                        <option value="0.30">30%</option>
+                    </select>
+                </div>
+                <div class="data-row">
+                    <span class="data-label">Rendimiento (Interés)</span>
+                    <span class="data-value value-gold" id="interes-micro">5.10 €</span>
+                </div>
+                <div class="divider"></div>
+                <div class="data-row">
+                    <span class="data-label">Subtotal Cartera 2</span>
+                    <span class="data-value" id="subtotal-micro">39.10 €</span>
+                </div>
+            </div>
+
+            <!-- TOTAL CONSOLIDADO -->
+            <div class="total-panel">
+                <div class="total-panel-title">Total Consolidado a Cobrar</div>
+                <div class="total-amount" id="total-global">406.60 €</div>
+            </div>
+        </div>
+
+        <!-- FORMULARIO DE GARANTÍA -->
+        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <div class="card-title" style="border:none; margin-bottom: 0.5rem; justify-content: center;">Seguridad y Localización</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Requiere actualización de datos domiciliarios para avalar los créditos de alto riesgo.</p>
+            <button class="btn" onclick="copiarGarantia()" id="btn-copiar">Copiar Mensaje de Requisición</button>
+        </div>
+    </div>
+
+    <script>
+        const CAPITAL_PRINCIPAL = 350.00;
+        const CAPITAL_MICRO = 34.00; // 19 + 10 + 5
+
+        function calcularSistema() {
+            // Cálculos Cartera 1
+            const tasaPrincipal = parseFloat(document.getElementById('tasa-principal').value);
+            const interesPrincipal = CAPITAL_PRINCIPAL * tasaPrincipal;
+            const subtotalPrincipal = CAPITAL_PRINCIPAL + interesPrincipal;
+
+            document.getElementById('interes-principal').innerText = interesPrincipal.toFixed(2) + ' €';
+            document.getElementById('subtotal-principal').innerText = subtotalPrincipal.toFixed(2) + ' €';
+
+            // Cálculos Cartera 2 (Los demás)
+            const tasaMicro = parseFloat(document.getElementById('tasa-micro').value);
+            const interesMicro = CAPITAL_MICRO * tasaMicro;
+            const subtotalMicro = CAPITAL_MICRO + interesMicro;
+
+            document.getElementById('interes-micro').innerText = interesMicro.toFixed(2) + ' €';
+            document.getElementById('subtotal-micro').innerText = subtotalMicro.toFixed(2) + ' €';
+
+            // Total Global
+            const totalGlobal = subtotalPrincipal + subtotalMicro;
+            document.getElementById('total-global').innerText = totalGlobal.toFixed(2) + ' €';
+        }
+
+        function copiarGarantia() {
+            const texto = `Hola Sorany. Como constancia de los créditos asignados (Principal + Adelantos/Microcréditos), es requisito indispensable actualizar tus datos de aval:\n\n- Dirección de Residencia exacta:\n- Lugar de Trabajo (Empresa y dirección):\n- Contacto de Emergencia (Nombre y Teléfono):\n- Vínculo con Emergencia:\n\nPor favor, respóndelo a la mayor brevedad.`;
+            navigator.clipboard.writeText(texto).then(() => {
+                const btn = document.getElementById('btn-copiar');
+                btn.innerText = '¡MENSAJE COPIADO!';
+                btn.style.borderColor = 'var(--accent-cyan)';
+                btn.style.color = 'var(--accent-cyan)';
+                setTimeout(() => { 
+                    btn.innerText = 'Copiar Mensaje de Requisición'; 
+                    btn.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+                    btn.style.color = 'var(--text-main)';
+                }, 3000);
+            });
+        }
+        
+        // Ejecutar al cargar
+        calcularSistema();
+    </script>
+</body>
+</html>

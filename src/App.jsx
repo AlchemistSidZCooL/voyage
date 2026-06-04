@@ -675,7 +675,7 @@ const App = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                 <div className="bg-slate-950/60 p-4 rounded-2xl border border-white/5 flex flex-col justify-between shadow-inner">
                   <span className="text-slate-400 text-sm font-bold uppercase tracking-wider">Total Presupuestado</span>
-                  <span className="text-3xl font-black text-slate-100 mt-2">2.888 €</span>
+                  <span className="text-3xl font-black text-slate-100 mt-2">2.483 €</span>
                 </div>
                 <div className="bg-emerald-950/30 p-4 rounded-2xl border border-emerald-500/20 flex flex-col justify-between shadow-inner">
                   <span className="text-emerald-400 text-sm font-bold uppercase tracking-wider flex items-center gap-1.5">
@@ -687,7 +687,7 @@ const App = () => {
                   <span className="text-amber-400 text-sm font-bold uppercase tracking-wider flex items-center gap-1.5">
                     <Clock className="w-4 h-4 text-amber-400" /> Pendiente
                   </span>
-                  <span className="text-3xl font-black text-amber-300 mt-2">2.520 €</span>
+                  <span className="text-3xl font-black text-amber-300 mt-2">2.115 €</span>
                 </div>
               </div>
 
@@ -721,12 +721,12 @@ const App = () => {
 
                 <div className="bg-slate-900/40 p-4 rounded-xl border border-white/5 flex justify-between items-center">
                   <div>
-                    <h5 className="font-bold text-slate-200 text-base">Alquiler de Habitación (3 Meses)</h5>
-                    <p className="text-slate-400 text-sm mt-0.5">3 mensualidades de 420 € cada una (Habitación 3)</p>
+                    <h5 className="font-bold text-slate-200 text-base">Vivienda Compartida (3 Meses)</h5>
+                    <p className="text-slate-400 text-sm mt-0.5">3 mensualidades de 285 € cada una (Aporte proporcional)</p>
                   </div>
                   <div className="text-right">
                     <span className="text-amber-400 bg-amber-950/20 border border-amber-500/20 px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_10px_rgba(245,158,11,0.05)]">
-                      1.260 € <Clock className="w-3.5 h-3.5" />
+                      855 € <Clock className="w-3.5 h-3.5" />
                     </span>
                     <p className="text-[10px] text-slate-500 mt-1">Planificado (Jun-Ago)</p>
                   </div>
@@ -753,16 +753,16 @@ const App = () => {
                 </h4>
                 <div className="space-y-3">
                   <div className="bg-slate-900/30 p-3 rounded-lg border-l-2 border-cyan-500/50 flex justify-between text-sm">
-                    <span className="text-slate-300 font-semibold">📅 29 de Junio de 2026</span>
-                    <span className="text-slate-200 font-black">735 € <span className="text-xs text-slate-500 font-medium">(420€ Alquiler + 315€ Estudios)</span></span>
+                    <span className="text-slate-300 font-semibold">📅 Junio de 2026</span>
+                    <span className="text-slate-200 font-black">600 € <span className="text-xs text-slate-500 font-medium">(285€ Vivienda + 315€ Estudios)</span></span>
                   </div>
                   <div className="bg-slate-900/30 p-3 rounded-lg border-l-2 border-cyan-500/50 flex justify-between text-sm">
-                    <span className="text-slate-300 font-semibold">📅 04 de Julio de 2026</span>
-                    <span className="text-slate-200 font-black">735 € <span className="text-xs text-slate-500 font-medium">(420€ Alquiler + 315€ Estudios)</span></span>
+                    <span className="text-slate-300 font-semibold">📅 Julio de 2026</span>
+                    <span className="text-slate-200 font-black">600 € <span className="text-xs text-slate-500 font-medium">(285€ Vivienda + 315€ Estudios)</span></span>
                   </div>
                   <div className="bg-slate-900/30 p-3 rounded-lg border-l-2 border-cyan-500/50 flex justify-between text-sm">
                     <span className="text-slate-300 font-semibold">📅 Agosto de 2026</span>
-                    <span className="text-slate-200 font-black">735 € <span className="text-xs text-slate-500 font-medium">(420€ Alquiler + 315€ Estudios)</span></span>
+                    <span className="text-slate-200 font-black">600 € <span className="text-xs text-slate-500 font-medium">(285€ Vivienda + 315€ Estudios)</span></span>
                   </div>
                   <div className="bg-slate-900/30 p-3 rounded-lg border-l-2 border-purple-500/50 flex justify-between text-sm">
                     <span className="text-slate-300 font-semibold">📅 04 de Septiembre de 2026</span>

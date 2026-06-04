@@ -11,9 +11,9 @@
 | Concepto | Total Presupuestado | Ya Desembolsado | Pendiente |
 | :--- | :---: | :---: | :---: |
 | **Estudios CIESA (Migraempleo)** | 1.600,00 € | 340,00 € | 1.260,00 € |
-| **Alquiler Habitación (3 Meses)** | 1.260,00 € | 0,00 € | 1.260,00 € |
+| **Vivienda / Manutención (3 Meses)** | 855,00 € | 0,00 € | 855,00 € |
 | **Trámites (Certificado Médico)** | 28,00 € | 28,00 € | 0,00 € |
-| **TOTAL GENERAL** | **2.888,00 €** | **368,00 €** | **2.520,00 €** |
+| **TOTAL GENERAL** | **2.483,00 €** | **368,00 €** | **2.115,00 €** |
 
 ---
 
@@ -30,18 +30,18 @@
 
 #### 📅 Junio 2026
 *   **29-06-2026:** **315,00 €** — Cuota 1 del programa de estudios en CIESA.
-*   **29-06-2026:** **420,00 €** — Pago de Alquiler de Habitación (Mes 1).
-*   **Subtotal Junio:** **735,00 €**
+*   **Junio 2026:** **285,00 €** — Aporte Vivienda/Gastos Piso (Mes 1).
+*   **Subtotal Junio:** **600,00 €**
 
 #### 📅 Julio 2026
 *   **04-07-2026:** **315,00 €** — Cuota 2 del programa de estudios en CIESA.
-*   **04-07-2026:** **420,00 €** — Pago de Alquiler de Habitación (Mes 2).
-*   **Subtotal Julio:** **735,00 €**
+*   **Julio 2026:** **285,00 €** — Aporte Vivienda/Gastos Piso (Mes 2).
+*   **Subtotal Julio:** **600,00 €**
 
 #### 📅 Agosto 2026
 *   **Agosto 2026:** **315,00 €** — Cuota 3 del programa de estudios en CIESA.
-*   **Agosto 2026:** **420,00 €** — Pago de Alquiler de Habitación (Mes 3).
-*   **Subtotal Agosto:** **735,00 €**
+*   **Agosto 2026:** **285,00 €** — Aporte Vivienda/Gastos Piso (Mes 3).
+*   **Subtotal Agosto:** **600,00 €**
 
 #### 📅 Septiembre 2026
 *   **04-09-2026:** **315,00 €** — Cuota 4 (Última) del programa de estudios en CIESA.

@@ -1,5 +1,25 @@
 # Changelog - SoranyProyect (Ruta Migratoria)
 
+## [29-05-2026] - Seguro Médico Adeslas y Avance Documental (v3.4) 🛡️📄
+
+### ✅ Completado hoy
+- **Seguro Médico de Estancia por Estudios:** Extracción y validación de la póliza "SegurCaixa Adeslas COMPLETA + Repatriación". Confirmado que cumple al 100% las exigencias de Extranjería (sin copagos, sin carencias, sin límite de gastos y repatriación incluida).
+- **Extracción de Identidad:** Localización del número de Cédula de Sorany (1055835949) mediante análisis algorítmico del PDF de antecedentes.
+- **Gestión de Bloqueo Policial:** Redacción del correo formal dirigido a la DIJIN para solicitar la actualización inmediata de los apellidos en el sistema de Antecedentes Judiciales tras confirmar el rechazo automático en la plataforma de la Cancillería.
+
+## [26-05-2026] - Consolidación de Expediente y Limpieza (v3.3) 📑🧹
+
+### ✅ Completado hoy
+- **Priorización de Requisitos Faltantes 🚨:** Reestructuración de las tareas urgentes en `informe_tareas_pendientes.md` y `00_PENDIENTE_Y_CHANGELOG.md` para destacar los 6 documentos críticos faltantes (Antecedentes, Seguro, Solvencia, Soportes de pago y Movimiento Migratorio) ante la inminente finalización del plazo de Extranjería.
+- **Limpieza del Proyecto 🧹:** Eliminación segura del archivo comprimido `fwdsolicituddeactualizacindedatosenlosantecedentes.zip` (ya extraído previamente) para mantener el repositorio limpio y sin archivos pesados redundantes.
+
+## [22-05-2026] - Corrección Financiera y Bloqueo de Antecedentes (v3.2) 🚨💸
+
+### ✅ Completado hoy
+- **Ajuste de Presupuesto y Alquiler 💸:** Corrección del malentendido financiero sobre las opciones de pago de CIESA. Se definió y documentó en `src/App.jsx` y `registro_prestamos_sorany.md` una cuota equitativa de **285 €/mes** para el aporte de vivienda compartida. El presupuesto total planificado se ajustó a **2.483 €**.
+- **Análisis de Bloqueo Crítico (Antecedentes Penales) 🚨:** Extracción y análisis del archivo `fwdsolicituddeactualizacindedatosenlosantecedentes.zip`. Se documentó la discrepancia de identidad en la base de datos de la Policía Nacional ("Florez Cardona" vs "Pineda Florez").
+- **Creación de Informe de Bloqueo 📄:** Redacción del documento `informe_bloqueo_antecedentes.md` explicando la urgencia del "Derecho de Petición" enviado a la Alcaldía de Aguadas para actualizar los datos, y actualización de las tareas pendientes (`00_PENDIENTE_Y_CHANGELOG.md`) marcando esto como un bloqueo estricto para la visa.
+
 ## [22-05-2026] - Ecosistema Financiero y Expediente de Matrícula CIESA (v3.1) 💰📂
 
 ### ✅ Completado hoy
