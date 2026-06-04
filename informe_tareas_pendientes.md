@@ -8,7 +8,7 @@
 ## 🚨 1. REQUISITOS URGENTES PARA CONSOLIDAR EXPEDIENTE (PRIORIDAD ABSOLUTA)
 > **¡ATENCIÓN!** Nos queda poco tiempo para terminar de tramitar y presentar el expediente ante Extranjería. Faltan estos 6 documentos clave:
 
-- [ ] **1. Antecedentes penales apostillados:** BLOQUEADO. Esperando actualización de apellidos ("Florez Cardona" a "Pineda Florez") por la Policía de Colombia tras Derecho de Petición a la Alcaldía de Aguadas.
+- [/] **1. Antecedentes penales apostillados:** EN PROGRESO. Bloqueo resuelto. Solicitud pagada vía PSE/Nequi (37.800 COP). Esperando el correo definitivo con el PDF de la Cancillería.
 - [x] **2. Seguro médico:** COMPLETADO. Póliza SegurCaixa Adeslas (COMPLETA + Repatriación) contratada.
 - [ ] **3. Solvencia económica / préstamo:** PENDIENTE definir formalmente si se usará acta notarial o préstamo de MigraEmpleo.
 - [ ] **4. Soporte de pago préstamo:** PENDIENTE (depende de la resolución del punto 3).

@@ -13,7 +13,8 @@
 | **Estudios CIESA (Migraempleo)** | 1.600,00 € | 340,00 € | 1.260,00 € |
 | **Vivienda / Manutención (3 Meses)** | 855,00 € | 0,00 € | 855,00 € |
 | **Trámites (Certificado Médico)** | 28,00 € | 28,00 € | 0,00 € |
-| **TOTAL GENERAL** | **2.483,00 €** | **368,00 €** | **2.115,00 €** |
+| **Trámites (Apostilla Antecedentes)** | 9,00 € | 9,00 € | 0,00 € |
+| **TOTAL GENERAL** | **2.492,00 €** | **377,00 €** | **2.115,00 €** |
 
 ---
 
@@ -22,7 +23,8 @@
 ### 🟢 1. Pagos Ya Realizados (Mayo 2026)
 *   **22-05-2026 (11:17h):** **28,00 €** para la obtención del **Certificado Médico Oficial** en España.
 *   **22-05-2026 (11:32h):** **340,00 €** para la **Matrícula** del curso "Especialista Administrativo" en CIESA Formación (Migraempleo). *Pago realizado en efectivo y documentado bajo el Recibo Nº de CIESA.*
-*   **Subtotal Mayo:** **368,00 €** (Desembolsado al 100%).
+*   **04-06-2026:** **9,00 €** (37.800 COP) para el trámite de la **Apostilla de La Haya** (Antecedentes Penales). *Pagado vía Nequi / PSE a la Cancillería.*
+*   **Subtotal Pagado:** **377,00 €** (Desembolsado al 100%).
 
 ---
 

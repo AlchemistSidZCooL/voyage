@@ -675,13 +675,13 @@ const App = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                 <div className="bg-slate-950/60 p-4 rounded-2xl border border-white/5 flex flex-col justify-between shadow-inner">
                   <span className="text-slate-400 text-sm font-bold uppercase tracking-wider">Total Presupuestado</span>
-                  <span className="text-3xl font-black text-slate-100 mt-2">2.483 €</span>
+                  <span className="text-3xl font-black text-slate-100 mt-2">2.492 €</span>
                 </div>
                 <div className="bg-emerald-950/30 p-4 rounded-2xl border border-emerald-500/20 flex flex-col justify-between shadow-inner">
                   <span className="text-emerald-400 text-sm font-bold uppercase tracking-wider flex items-center gap-1.5">
                     <CheckCircle className="w-4 h-4 text-emerald-400" /> Ya Desembolsado
                   </span>
-                  <span className="text-3xl font-black text-emerald-300 mt-2">368 €</span>
+                  <span className="text-3xl font-black text-emerald-300 mt-2">377 €</span>
                 </div>
                 <div className="bg-amber-950/20 p-4 rounded-2xl border border-amber-500/20 flex flex-col justify-between shadow-inner">
                   <span className="text-amber-400 text-sm font-bold uppercase tracking-wider flex items-center gap-1.5">
@@ -716,6 +716,19 @@ const App = () => {
                       28 € <CheckCircle className="w-3.5 h-3.5" />
                     </span>
                     <p className="text-[10px] text-slate-500 mt-1">22-05-2026</p>
+                  </div>
+                </div>
+
+                <div className="bg-slate-900/60 p-4 rounded-xl border border-white/5 flex justify-between items-center">
+                  <div>
+                    <h5 className="font-bold text-slate-100 text-base">Apostilla de La Haya</h5>
+                    <p className="text-slate-400 text-sm mt-0.5">Certificado de Antecedentes (Cancillería de Colombia)</p>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_10px_rgba(16,185,129,0.1)]">
+                      9 € <CheckCircle className="w-3.5 h-3.5" />
+                    </span>
+                    <p className="text-[10px] text-slate-500 mt-1">04-06-2026 (Nequi)</p>
                   </div>
                 </div>
 

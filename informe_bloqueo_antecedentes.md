@@ -1,9 +1,9 @@
 # Informe de Bloqueo Crítico: Actualización de Antecedentes Penales 🚨
 
-> [!CAUTION]
-> **Estado Actual:** Bloqueado ❌
+> [!NOTE]
+> **Estado Actual:** RESUELTO ✅ (04 de Junio de 2026)
+> **Resolución:** La DIJIN (Policía Nacional) confirmó por correo electrónico la actualización exitosa de los datos a "Sorani Pineda Florez".
 > **Trámite Afectado:** Autorización de Estancia por Estudios en España.
-> **Fecha del Informe:** 22 de Mayo de 2026.
 
 ---
 
@@ -34,14 +34,12 @@ Este directorio contiene la documentación enviada por correo electrónico (`flo
 
 Actualmente existen dos frentes para lograr la corrección del apellido en la base de datos de la Policía:
 
-- [ ] **Vía Alcaldía de Aguadas (En curso):**
+- [x] **Vía Alcaldía de Aguadas:**
     - **Estado:** Derecho de Petición enviado.
-    - **Contacto para seguimiento:** `alcaldia@aguadas-caldas.gov.co` | Teléfonos: `+57 322 907 2921` / `+57 (6) 851 3000`.
 
-- [ ] **Vía Directa DIJIN desde España (Nueva Acción Recomendada):**
-    - Dado que el **Consulado de Colombia en Madrid NO tiene acceso** para modificar esta base de datos, el trámite puede adelantarse directamente escribiendo a la sede central de la Policía (DIJIN).
-    - **Acción:** Enviar correo a **`dijin.araic-atc@policia.gov.co`**.
-    - **Contenido:** Explicar la inconsistencia de identidad (figura como "Florez Cardona" pero su identidad legal es "Pineda Florez") y adjuntar copia de la cédula actual y los soportes del cambio de apellidos.
+- [x] **Vía Directa DIJIN desde España:**
+    - **Estado:** COMPLETADO Y EXITOSO.
+    - **Resolución:** El correo enviado a la DIJIN (`dijin.araic-env@policia.gov.co`) surtió efecto. La base de datos fue actualizada a "Sorani Pineda Florez".
 
 ---
 

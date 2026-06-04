@@ -17,7 +17,7 @@
 ### 🔴 Urgentes & Críticas (Acción Inmediata - Consolidación de Expediente)
 > **¡ALERTA DE TIEMPO!** Nos queda poco tiempo para terminar de tramitar el expediente. Faltan estos 6 documentos clave:
 
-- [/] **1. Antecedentes penales apostillados:** Solicitud de apostilla enviada a Cancillería. Esperando recepción del PDF en el correo (plazo máx. 3 días hábiles).
+- [/] **1. Antecedentes penales apostillados:** Solicitud PAGADA con éxito (37.800 COP vía Nequi). Esperando el correo final con el PDF de la Cancillería.
 - [x] **2. Seguro médico:** COMPLETADO. Póliza SegurCaixa Adeslas (COMPLETA + Repatriación).
 - [ ] **3. Solvencia económica / préstamo:** Definir formalmente préstamo MigraEmpleo vs. Acta Notarial.
 - [ ] **4. Soporte de pago préstamo:** Conseguir comprobante (depende del punto 3).
@@ -59,8 +59,8 @@
 ## 📑 III. HISTORIAL DE VERSIONES (CHANGELOG RESUMIDO)
 
 ### v3.5 (04-06-2026) - Optimización de Presupuesto y Apostilla en Curso 📉🏛️
-*   **Ajuste Financiero:** Reducción del presupuesto estimado de vivienda/manutención de 420 € a 285 € mensuales, bajando el total general del proyecto de 2.888 € a 2.483 €. Actualización reflejada en `registro_prestamos_sorany.md` y en las tarjetas de la UI (`App.jsx`).
-*   **Trámite de Apostilla:** Certificado de Antecedentes Penales actualizado descargado con éxito. Solicitud de Apostilla de La Haya ingresada en la Cancillería de Colombia y en espera de expedición.
+*   **Ajuste Financiero:** Reducción del presupuesto estimado de vivienda/manutención de 420 € a 285 € mensuales, bajando el total general del proyecto. Añadido el gasto de 9 € (37.800 COP) de la apostilla. Total actualizado a 2.492 €.
+*   **Trámite de Apostilla:** Certificado de Antecedentes Penales actualizado descargado con éxito. Solicitud de Apostilla PAGADA vía PSE/Nequi. En espera de la emisión del PDF definitivo.
 
 ### v3.4 (29-05-2026) - Seguro Médico Adeslas y Avance Documental 🛡️📄
 *   **Seguro Médico Completado:** Validación y registro de la póliza Adeslas COMPLETA + Repatriación. Cumple todos los requisitos de Extranjería.
